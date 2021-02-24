@@ -3,7 +3,8 @@ const textHeader = require('./headers/text');
 const messageHeader = require('./headers/message');
 const { parse: productDescription } = require('./headers/productdescription');
 const symbologyHeader = require('./headers/symbology');
-const radialPacketHeader = require('./headers/radialpacket');
+const tabularHeader = require('./headers/tabular');
+const radialPackets = require('./headers/radialpackets');
 
 // register product parsers
 /* eslint-disable global-require */
@@ -51,17 +52,31 @@ const nexradLevel3Data = (file) => {
 	// product description
 	result.productDescription = productDescription(raf, product);
 
+	// symbology parsing
+	if (result.productDescription.offsetSymbology !== 0) {
 	// jump to symbology, convert halfwords to bytes
-	const offsetSymbologyBytes = textHeaderLength + result.productDescription.offsetSymbology * 2;
-	// error checking
-	if (offsetSymbologyBytes > raf.getLength()) throw new Error(`Invalid symbology offset: ${result.productDescription.offsetSymbology}`);
-	raf.seek(offsetSymbologyBytes);
+		const offsetSymbologyBytes = textHeaderLength + result.productDescription.offsetSymbology * 2;
+		// error checking
+		if (offsetSymbologyBytes > raf.getLength()) throw new Error(`Invalid symbology offset: ${result.productDescription.offsetSymbology}`);
+		raf.seek(offsetSymbologyBytes);
 
-	// read the symbology header
-	result.symbology = symbologyHeader(raf);
+		// read the symbology header
+		result.symbology = symbologyHeader(raf);
+		// read the radial packet header
+		result.radialPackets = radialPackets(raf, result.symbology.numberLayers);
+	}
 
-	// read the radial packet header
-	result.radialPacketHeader = radialPacketHeader(raf);
+	// tabular parsing
+	if (result.productDescription.offsetTabular !== 0) {
+		// jump to tabular, convert halfwords to bytes
+		const offsetTabularBytes = textHeaderLength + result.productDescription.offsetTabular * 2;
+		// error checking
+		if (offsetTabularBytes > raf.getLength()) throw new Error(`Invalid tabular offset: ${result.productDescription.offsetTabular}`);
+		raf.seek(offsetTabularBytes);
+
+		// read the tabular header
+		result.tabular = tabularHeader(raf);
+	}
 
 	return result;
 };

@@ -1,4 +1,3 @@
-const { EOL } = require('os');
 const messageHeader = require('./message');
 const { parse: productDescription } = require('./productdescription');
 

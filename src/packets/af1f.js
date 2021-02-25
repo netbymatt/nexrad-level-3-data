@@ -47,11 +47,6 @@ const rleExpand = (byte) => {
 	return result;
 };
 
-const runColor = (byte) => ({
-	run: byte >>> 4,
-	colorCode: byte & 0x0F,
-});
-
 module.exports = {
 	code,
 	description,

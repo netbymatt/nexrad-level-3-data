@@ -10,6 +10,7 @@ const radialPackets = require('./headers/radialpackets');
 /* eslint-disable global-require */
 const productsRaw = [
 	require('./products/80'),
+	require('./products/56'),
 ];
 /* eslint-enable global-require */
 

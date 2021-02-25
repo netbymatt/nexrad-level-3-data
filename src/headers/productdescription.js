@@ -4,6 +4,8 @@ const MODE_PRECIPITATION = 2;
 
 const parse = (raf, product) => {
 	const result = {
+		abbreviation: product.abbreviation,
+		description: product.description,
 		divider: raf.readShort(),
 		latitude: raf.readInt() / 1000,
 		longitude: raf.readInt() / 1000,

@@ -1,3 +1,4 @@
+const bzip = require('seek-bzip');
 const { RandomAccessFile } = require('./randomaccessfile');
 const textHeader = require('./headers/text');
 const messageHeader = require('./headers/message');
@@ -11,6 +12,7 @@ const radialPackets = require('./headers/radialpackets');
 const productsRaw = [
 	require('./products/80'),
 	require('./products/56'),
+	require('./products/165'),
 ];
 /* eslint-enable global-require */
 
@@ -22,7 +24,7 @@ productsRaw.forEach((product) => {
 });
 
 // list of available product code abbreviations for type-checking
-const productAbbreviations = productsRaw.map((product) => product.abbreviation);
+const productAbbreviations = productsRaw.map((product) => product.abbreviation).flat();
 
 // parse data provided from string or buffer
 const nexradLevel3Data = (file) => {
@@ -53,18 +55,40 @@ const nexradLevel3Data = (file) => {
 	// product description
 	result.productDescription = productDescription(raf, product);
 
+	// test for compressed file and decompress
+	let decompressed;
+	if (raf.readString(3) === 'BZh') {
+		// jump back the three characters that were examined
+		raf.skip(-3);
+		const rafPos = raf.getPos();
+		// get the remainder of the file
+		const compressed = raf.read(raf.getLength() - raf.getPos());
+		const data = bzip.decode(compressed);
+		// combine the header from the original file with the decompressed data
+		raf.seek(0);
+		decompressed = new RandomAccessFile(Buffer.concat([
+			raf.read(rafPos),
+			data,
+		]));
+		decompressed.seek(rafPos);
+	} else {
+		// jump back the three characters that were examined
+		raf.skip(-3);
+		decompressed = raf;
+	}
+
 	// symbology parsing
 	if (result.productDescription.offsetSymbology !== 0) {
 	// jump to symbology, convert halfwords to bytes
 		const offsetSymbologyBytes = textHeaderLength + result.productDescription.offsetSymbology * 2;
 		// error checking
-		if (offsetSymbologyBytes > raf.getLength()) throw new Error(`Invalid symbology offset: ${result.productDescription.offsetSymbology}`);
-		raf.seek(offsetSymbologyBytes);
+		if (offsetSymbologyBytes > decompressed.getLength()) throw new Error(`Invalid symbology offset: ${result.productDescription.offsetSymbology}`);
+		decompressed.seek(offsetSymbologyBytes);
 
 		// read the symbology header
-		result.symbology = symbologyHeader(raf);
+		result.symbology = symbologyHeader(decompressed);
 		// read the radial packet header
-		result.radialPackets = radialPackets(raf, result.symbology.numberLayers);
+		result.radialPackets = radialPackets(decompressed, result.symbology.numberLayers);
 	}
 
 	// tabular parsing
@@ -72,11 +96,11 @@ const nexradLevel3Data = (file) => {
 		// jump to tabular, convert halfwords to bytes
 		const offsetTabularBytes = textHeaderLength + result.productDescription.offsetTabular * 2;
 		// error checking
-		if (offsetTabularBytes > raf.getLength()) throw new Error(`Invalid tabular offset: ${result.productDescription.offsetTabular}`);
-		raf.seek(offsetTabularBytes);
+		if (offsetTabularBytes > decompressed.getLength()) throw new Error(`Invalid tabular offset: ${result.productDescription.offsetTabular}`);
+		decompressed.seek(offsetTabularBytes);
 
 		// read the tabular header
-		result.tabular = tabularHeader(raf);
+		result.tabular = tabularHeader(decompressed);
 	}
 
 	return result;

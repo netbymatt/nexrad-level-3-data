@@ -2,6 +2,7 @@
 /* eslint-disable global-require */
 const packetsRaw = [
 	require('../packets/af1f'),
+	require('../packets/10'),
 ];
 	/* eslint-enable global-require */
 
@@ -32,7 +33,7 @@ const parse = (raf, layerCount) => {
 
 		// look up the packet code
 		const packet = packets[packetCode];
-		if (!packet) throw new Error(`Unsupported packet code ${packetCodeHex}`);
+		if (!packet) throw new Error(`Unsupported packet code 0x${packetCodeHex}`);
 
 		// parse the packet and add to layers
 		layers.push(packet.parser(raf));

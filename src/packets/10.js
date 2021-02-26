@@ -1,6 +1,5 @@
-const code = 0xaf1f;
-const description = 'Radial Data Packet (16 Data Levels)';
-const rle = require('./utilities/rle');
+const code = 16;
+const description = 'Digital Radial Data Array Packet';
 
 const parser = (raf) => {
 	// parse the data
@@ -11,7 +10,7 @@ const parser = (raf) => {
 		iSweepCenter: raf.readShort(),
 		jSweepCenter: raf.readShort(),
 		rangeScale: raf.readShort() / 1000,
-		numRadials: raf.readShort(),
+		numberRadials: raf.readShort(),
 	};
 	// also providethe packet code in hex
 	result.packetCodeHex = result.packetCode.toString(16);
@@ -19,18 +18,19 @@ const parser = (raf) => {
 	// loop through the radials and bins
 	// return a structure of [radial][bin]
 	const radials = [];
-	for (let r = 0; r < result.numRadials; r += 1) {
-		// get the rle length
-		const rleLength = raf.readShort() * 2;
+	for (let r = 0; r < result.numberRadials; r += 1) {
+		const bytesInRadial = raf.readShort();
 		const radial = {
 			startAngle: raf.readShort() / 10,
 			angleDelta: raf.readShort() / 10,
 			bins: [],
 		};
-		for (let i = 0; i < rleLength; i += 1) {
-			radial.bins.push(...(i.expand4_4(raf.readByte())));
+		for (let i = 0; i < result.numberBins; i += 1) {
+			radial.bins.push(raf.readByte());
 		}
 		radials.push(radial);
+		// must end on a halfword boundary, skip any additional data if required
+		if (bytesInRadial !== result.numberBins) raf.skip(bytesInRadial - result.numberBins);
 	}
 	result.radials = radials;
 

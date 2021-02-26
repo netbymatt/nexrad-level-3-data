@@ -3,12 +3,6 @@ const abbreviation = 'NTP';
 const description = 'Storm Total Rainfall Accumulation';
 const { RandomAccessFile } = require('../../randomaccessfile');
 
-const parser = (raf) => {
-	const data = {};
-
-	return data;
-};
-
 // eslint-disable-next-line camelcase
 const halfwords30_53 = (data) => {
 	// turn data into a random access file for bytewise parsing purposes
@@ -29,7 +23,6 @@ module.exports = {
 	code,
 	abbreviation,
 	description,
-	parser,
 	productDescription: {
 		halfwords30_53,
 	},

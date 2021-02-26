@@ -1,13 +1,7 @@
 const code = 56;
-const abbreviation = 'N0S';
+const abbreviation = ['N0S', 'N1S', 'N2S', 'N3S'];
 const description = 'Storm relative velocity';
 const { RandomAccessFile } = require('../../randomaccessfile');
-
-const parser = (raf) => {
-	const data = {};
-
-	return data;
-};
 
 // eslint-disable-next-line camelcase
 const halfwords30_53 = (data) => {
@@ -29,7 +23,7 @@ module.exports = {
 	code,
 	abbreviation,
 	description,
-	parser,
+
 	productDescription: {
 		halfwords30_53,
 	},

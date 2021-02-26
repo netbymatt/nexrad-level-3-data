@@ -29,6 +29,7 @@ const parse = (raf, product) => {
 		offsetSymbology: raf.readInt(),
 		offsetGraphic: raf.readInt(),
 		offsetTabular: raf.readInt(),
+		supplemental: product.supplemental,
 	};
 
 	// check fixed data values

@@ -1,13 +1,13 @@
 const messageHeader = require('./message');
 const { parse: productDescription } = require('./productdescription');
 
-const parse = (raf) => {
+const parse = (raf, product) => {
 	const result = {
 		blockDivider: raf.readShort(),
 		blockId: raf.readShort(),
 		blockLength: raf.readInt(),
 		messageHeader: messageHeader(raf),
-		productDescription: productDescription(raf),
+		productDescription: productDescription(raf, product),
 		blockDivider2: raf.readShort(),
 		totalPages: raf.readShort(),
 		charactersPerLine: raf.readShort(),

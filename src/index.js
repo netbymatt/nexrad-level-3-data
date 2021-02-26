@@ -10,8 +10,9 @@ const radialPackets = require('./headers/radialpackets');
 // register product parsers
 /* eslint-disable global-require */
 const productsRaw = [
-	require('./products/80'),
 	require('./products/56'),
+	require('./products/78'),
+	require('./products/80'),
 	require('./products/165'),
 	require('./products/177'),
 ];
@@ -101,7 +102,7 @@ const nexradLevel3Data = (file) => {
 		decompressed.seek(offsetTabularBytes);
 
 		// read the tabular header
-		result.tabular = tabularHeader(decompressed);
+		result.tabular = tabularHeader(decompressed, product);
 	}
 
 	return result;

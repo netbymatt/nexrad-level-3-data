@@ -83,3 +83,4 @@ The file naming convention is: SSS_PPP_YYYY_MM_DD_HH_MM_SS
 The code for this project is based upon:
 - [Unidata](https://github.com/Unidata/thredds/blob/master/cdm/src/main/java/ucar/nc2/iosp/nexrad2/)
 - [nexrad-radar-data](https://github.com/bartholomew91/nexrad-radar-data)
+- And my own fork of the above [netbymatt/nexrad-radar-data](https://github.com/netbymatt/nexrad-radar-data)

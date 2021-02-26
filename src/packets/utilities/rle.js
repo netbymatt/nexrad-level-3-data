@@ -2,7 +2,7 @@
 
 // expand rle from rrrrvvvv, 4-bit run, 4-bit value
 // eslint-disable-next-line camelcase
-const rleExpand_4_4 = (byte) => {
+const expand4_4 = (byte) => {
 	const run = byte >> 4;
 	const value = byte & 0x0F;
 	const result = [];
@@ -13,5 +13,5 @@ const rleExpand_4_4 = (byte) => {
 };
 
 module.exports = {
-	rleExpand_4_4,
+	expand4_4,
 };

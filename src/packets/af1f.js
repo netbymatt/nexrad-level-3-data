@@ -28,7 +28,7 @@ const parser = (raf) => {
 			bins: [],
 		};
 		for (let i = 0; i < rleLength; i += 1) {
-			radial.bins.push(...(i.expand4_4(raf.readByte())));
+			radial.bins.push(...(rle.expand4_4(raf.readByte())));
 		}
 		radials.push(radial);
 	}

@@ -13,6 +13,7 @@ const productsRaw = [
 	require('./products/80'),
 	require('./products/56'),
 	require('./products/165'),
+	require('./products/177'),
 ];
 /* eslint-enable global-require */
 

@@ -1,19 +1,8 @@
 // register packet parsers
-/* eslint-disable global-require */
-const packetsRaw = [
-	require('../packets/af1f'),
-	require('../packets/10'),
-];
-	/* eslint-enable global-require */
 
-// make up a list of packet parsers by integer type
-const packets = {};
-packetsRaw.forEach((packet) => {
-	if (packets[packet.code]) throw new Error(`Duplicate packet code ${packet.code}`);
-	packets[packet.code] = packet;
-});
+const { packets } = require('../packets');
 
-const parse = (raf, layerCount) => {
+const parse = (raf, productDescription, layerCount) => {
 	const layers = [];
 	for (let layer = 0; layer < layerCount; layer += 1) {
 		// the first layer divider and layer length are consumed by the symbology header, all layers after this must consume these here
@@ -29,14 +18,18 @@ const parse = (raf, layerCount) => {
 		raf.skip(-2);
 
 		// turn into hex packet code
-		const packetCodeHex = packetCode.toString(16);
+		const packetCodeHex = packetCode.toString(16).padStart(4, '0');
 
 		// look up the packet code
 		const packet = packets[packetCode];
-		if (!packet) throw new Error(`Unsupported packet code 0x${packetCodeHex}`);
-
-		// parse the packet and add to layers
-		layers.push(packet.parser(raf));
+		// first layer always results in an error
+		if (!packet && layer === 0) throw new Error(`Unsupported packet code 0x${packetCodeHex}`);
+		if (!packet) {
+			console.warn(`Unsupported packet code 0x${packetCodeHex} in layer ${layer}`);
+		} else {
+			// parse the packet and add to layers
+			layers.push(packet.parser(raf, productDescription));
+		}
 	}
 	return layers;
 };

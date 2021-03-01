@@ -6,27 +6,7 @@ const { parse: productDescription } = require('./headers/productdescription');
 const symbologyHeader = require('./headers/symbology');
 const tabularHeader = require('./headers/tabular');
 const radialPackets = require('./headers/radialpackets');
-
-// register product parsers
-/* eslint-disable global-require */
-const productsRaw = [
-	require('./products/56'),
-	require('./products/78'),
-	require('./products/80'),
-	require('./products/165'),
-	require('./products/177'),
-];
-/* eslint-enable global-require */
-
-// make up a list of products by integer type
-const products = {};
-productsRaw.forEach((product) => {
-	if (products[product.code]) throw new Error(`Duplicate product code ${product.code}`);
-	products[product.code] = product;
-});
-
-// list of available product code abbreviations for type-checking
-const productAbbreviations = productsRaw.map((product) => product.abbreviation).flat();
+const { products, productAbbreviations } = require('./products');
 
 // parse data provided from string or buffer
 const nexradLevel3Data = (file) => {
@@ -59,9 +39,8 @@ const nexradLevel3Data = (file) => {
 
 	// test for compressed file and decompress
 	let decompressed;
-	if (raf.readString(3) === 'BZh') {
-		// jump back the three characters that were examined
-		raf.skip(-3);
+	if (result.productDescription.compressionMethod > 0) {
+		// store position in file
 		const rafPos = raf.getPos();
 		// get the remainder of the file
 		const compressed = raf.read(raf.getLength() - raf.getPos());
@@ -74,8 +53,7 @@ const nexradLevel3Data = (file) => {
 		]));
 		decompressed.seek(rafPos);
 	} else {
-		// jump back the three characters that were examined
-		raf.skip(-3);
+		// pass file through
 		decompressed = raf;
 	}
 
@@ -90,7 +68,7 @@ const nexradLevel3Data = (file) => {
 		// read the symbology header
 		result.symbology = symbologyHeader(decompressed);
 		// read the radial packet header
-		result.radialPackets = radialPackets(decompressed, result.symbology.numberLayers);
+		result.radialPackets = radialPackets(decompressed, result.productDescription, result.symbology.numberLayers);
 	}
 
 	// tabular parsing

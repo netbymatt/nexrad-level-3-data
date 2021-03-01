@@ -1,7 +1,7 @@
 const code = 16;
 const description = 'Digital Radial Data Array Packet';
 
-const parser = (raf) => {
+const parser = (raf, productDescription) => {
 	// parse the data
 	const result = {
 		packetCode: raf.readUShort(),
@@ -15,6 +15,12 @@ const parser = (raf) => {
 	// also providethe packet code in hex
 	result.packetCodeHex = result.packetCode.toString(16);
 
+	// set up scaling or defaults
+	const scaling = {
+		scale: productDescription?.plot?.scale ?? 1,
+		offset: productDescription?.plot?.offset ?? 0,
+	};
+
 	// loop through the radials and bins
 	// return a structure of [radial][bin]
 	const radials = [];
@@ -26,7 +32,7 @@ const parser = (raf) => {
 			bins: [],
 		};
 		for (let i = 0; i < result.numberBins; i += 1) {
-			radial.bins.push(raf.readByte());
+			radial.bins.push(raf.readByte() * scaling.scale + scaling.offset);
 		}
 		radials.push(radial);
 		// must end on a halfword boundary, skip any additional data if required

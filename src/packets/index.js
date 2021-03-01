@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // load all packets in folder automatically
-const files = fs.readdirSync(__dirname).filter((file) => !fs.lstatSync(path.join(__dirname, file)).isDirectory() && file != 'index.js');
+const files = fs.readdirSync(__dirname).filter((file) => !fs.lstatSync(path.join(__dirname, file)).isDirectory() && file !== 'index.js');
 // eslint-disable-next-line import/no-dynamic-require, global-require
 const packetsRaw = files.map((file) => require(path.join(__dirname, file)));
 

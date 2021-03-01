@@ -36,7 +36,7 @@ An example of plotting data produced from this library can be found [HERE](https
 
 ## API
 
-The parser will read files as either a string or a buffer. Streams are not supported. The parser will return an object representind the data as defined in https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001Y.pdf
+The parser will read files as either a string or a buffer. Streams are not supported. The parser will return an object representing the data as defined in https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001Y.pdf
 
 In some situations additional data is provided in the productDescription property including a friendly name for the type of data or product legends to aid in decoding the data. Values are automatically parsed as integers, floats and strings as defined in the specification.
 

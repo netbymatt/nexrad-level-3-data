@@ -21,9 +21,22 @@ const parser = (raf, productDescription) => {
 		offset: productDescription?.plot?.offset ?? 0,
 	};
 
+	// create a lookup table mapping raw bin values to scaled values
+	const scaled = [];
+	let start = 0;
+	if (productDescription.plot.leadingFlags.noData === 0) {
+		start = 1;
+		scaled[0] = null;
+	}
+	for (let i = start; i < productDescription.plot.maxDataValue; i += 1) {
+		scaled.push(((i - scaling.offset) / scaling.scale) * (productDescription?.plot?.definedScalingFactor ?? 1));
+	}
+
 	// loop through the radials and bins
 	// return a structure of [radial][bin]
+	// radials provides scaled values per the product's scaling, radialsRaw provides bytes as read from the file
 	const radials = [];
+	const radialsRaw = [];
 	for (let r = 0; r < result.numberRadials; r += 1) {
 		const bytesInRadial = raf.readShort();
 		const radial = {
@@ -31,14 +44,19 @@ const parser = (raf, productDescription) => {
 			angleDelta: raf.readShort() / 10,
 			bins: [],
 		};
+		const radialRaw = { ...radial, bins: [] };
 		for (let i = 0; i < result.numberBins; i += 1) {
-			radial.bins.push(raf.readByte() * scaling.scale + scaling.offset);
+			const value = raf.readByte();
+			radial.bins.push(scaled[value]);
+			radialRaw.bins.push(value);
 		}
 		radials.push(radial);
+		radialsRaw.push(radialRaw);
 		// must end on a halfword boundary, skip any additional data if required
 		if (bytesInRadial !== result.numberBins) raf.skip(bytesInRadial - result.numberBins);
 	}
 	result.radials = radials;
+	result.radialsRaw = radialsRaw;
 
 	return result;
 };

@@ -26,6 +26,7 @@ const halfwords30_53 = (data) => {
 			maxDataValue: raf.readShort(),
 			leadingFlags: leadingFlags(raf.readShort()),
 			trailingFlags: raf.readShort(),
+			definedScalingFactor: 0.0001,
 		},
 		dependent39_46: raf.read(16),
 		maxAccumulation: raf.readShort() / 10,

@@ -16,6 +16,9 @@ const halfwords30_53 = (data) => {
 		endRainfallMinutes: raf.readShort(),
 		meanFieldBias: raf.readShort() / 100,
 		sampleSize: raf.readShort() / 100,
+		plot: {
+			maxDataValue: 16,
+		},
 	};
 };
 

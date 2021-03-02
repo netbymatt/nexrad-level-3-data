@@ -14,6 +14,9 @@ const halfwords30_53 = (data) => {
 		sampleSize: raf.readShort() / 100,
 		endRanifallDate: raf.readShort(),
 		endRainfallMinutes: raf.readShort(),
+		plot: {
+			maxDataValue: 16,
+		},
 	};
 };
 

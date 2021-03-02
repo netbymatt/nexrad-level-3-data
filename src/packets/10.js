@@ -29,7 +29,7 @@ const parser = (raf, productDescription) => {
 		scaled[0] = null;
 	}
 	for (let i = start; i < productDescription.plot.maxDataValue; i += 1) {
-		scaled.push(((i - scaling.offset) / scaling.scale) * (productDescription?.plot?.definedScalingFactor ?? 1));
+		scaled.push(((i - scaling.offset) / scaling.scale));
 	}
 
 	// loop through the radials and bins

@@ -20,13 +20,12 @@ const halfwords30_53 = (data) => {
 	return {
 		nullProductFlag: nullProductFlag(raf.readShort()),
 		plot: {
-			scale: raf.readFloat() / 100,
+			scale: raf.readFloat() * 100,
 			offset: raf.readFloat(),
 			dependent35: raf.readShort(),
 			maxDataValue: raf.readShort(),
 			leadingFlags: leadingFlags(raf.readShort()),
 			trailingFlags: raf.readShort(),
-			definedScalingFactor: 0.0001,
 		},
 		dependent39_46: raf.read(16),
 		maxAccumulation: raf.readShort() / 10,

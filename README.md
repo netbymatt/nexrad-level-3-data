@@ -33,7 +33,7 @@ console.log(level3Data);
 ```
 
 ## Examples
-An example of plotting data produced from this library can be found [HERE](https://github.com/netbymatt/nexrad-level-3-plot)
+An example of plotting data produced from this library can be found in [nexrad-level-3-plot](https://github.com/netbymatt/nexrad-level-3-plot)
 
 ## API
 

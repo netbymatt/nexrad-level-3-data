@@ -11,6 +11,7 @@ You can find more information on how radar data is encoded at [NOAA](https://www
 1. [Examples](#examples)
 1. [API](#api)
 1. [Background Information](#background-information)
+1. [Work In Progress](#work-in-progress)
 1. [ToDo](#todo)
 1. [Acknowledgements](#acknowledgements)
 
@@ -74,6 +75,24 @@ The file naming convention is: SSS_PPP_YYYY_MM_DD_HH_MM_SS
 | HH | 2-digit, 24-hour hour |
 | MM | 2-digit minute |
 | SS | 2-digit seconds |
+
+## Work In Progress
+I've developed parsing algorithms for that the products that I needed most for my own use. I'm open to requests or pull requests that add additional parsing algorithms. Available products are listed below.
+### Available Products
+|ID|Product Code(s)|Description|
+|---|---|---|
+|56|N0S, N1S, N2S, N3S|Storm relative velocity|
+|78|N1P|One-hour precipitation
+|80|NTP|Storm Total Rainfall Accumulation|
+|165|N0H, N1H, N2H, N3H|Hydrometeor Classification
+|170|DAA|Digital One Hour Accumulation
+|172|DTA|Storm Total Precipitation
+|177|HHC|Hybrid Hydrometeor Classification
+### Supported Packet Types
+|Code|Description|
+|---|---|
+|0x0010|Digital Radial Data Array Packe|
+|0xAF1F|Radial Data Packet (16 Data Levels)|
 
 ## ToDo
 * Add support for additional radial products

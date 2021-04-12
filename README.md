@@ -3,7 +3,7 @@
 ### v0.1.0
 A javascript implementation for decoding Nexrad Level III radar files.
 
-You can find more information on how radar data is encoded at [NOAA](https://www.roc.noaa.gov/WSR88D/BuildInfo/Files.aspx). The work in this project is based mainly on the document [2620001 ICD FOR THE RPG TO CLASS 1 USER - Build 19.0](https://www.roc.noaa.gov/WSR88D/BuildInfo/Files.aspx).
+You can find more information on how radar data is encoded at [NOAA](https://www.roc.noaa.gov/WSR88D/BuildInfo/Files.aspx). The work in this project is based mainly on the document [2620001 ICD FOR THE RPG TO CLASS 1 USER - Build 19.0](https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001Y.pdf).
 
 ## Contents
 1. [Install](#install)
@@ -93,7 +93,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 |Code|Description|
 |---|---|
 |0x0002|Text and Special Symbol Packets|
-|0x0010|Digital Radial Data Array Packe|
+|0x0010|Digital Radial Data Array Packet|
 |0xAF1F|Radial Data Packet (16 Data Levels)|
 
 ## ToDo

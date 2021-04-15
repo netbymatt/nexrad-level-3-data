@@ -24,11 +24,12 @@ const parser = (raf, productDescription) => {
 	// create a lookup table mapping raw bin values to scaled values
 	const scaled = [];
 	let start = 0;
-	if (productDescription.plot.leadingFlags.noData === 0) {
+	// if a plot object is defined add scaling options
+	if (productDescription?.plot?.leadingFlags?.noData === 0) {
 		start = 1;
 		scaled[0] = null;
 	}
-	for (let i = start; i < productDescription.plot.maxDataValue; i += 1) {
+	for (let i = start; i <= productDescription.plot.maxDataValue; i += 1) {
 		scaled.push(((i - scaling.offset) / scaling.scale));
 	}
 

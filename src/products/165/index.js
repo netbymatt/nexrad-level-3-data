@@ -36,6 +36,7 @@ const halfwords30_53 = (data) => {
 		...deltaTime(raf.readShort()),
 		compressionMethod: raf.readShort(),
 		uncompressedSize: (raf.readUShort() << 16) + raf.readUShort(),
+		plot: { maxDataValue: 150 },
 	};
 };
 

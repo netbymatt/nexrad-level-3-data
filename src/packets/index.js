@@ -13,6 +13,23 @@ packetsRaw.forEach((packet) => {
 	packets[packet.code] = packet;
 });
 
+// generic packet parser
+const parser = (raf, productDescription) => {
+	// get the packet code and then jump back in the file so it can be consumed by the packet parser
+	const packetCode = raf.readUShort();
+	raf.skip(-2);
+
+	// turn into hex packet code
+	const packetCodeHex = packetCode.toString(16).padStart(4, '0');
+
+	// look up the packet code
+	const packet = packets[packetCode];
+	// first layer always results in an error
+	if (!packet) throw new Error(`Unsupported packet code 0x${packetCodeHex}`);
+	return packet.parser(raf, productDescription);
+};
+
 module.exports = {
 	packets,
+	parser,
 };

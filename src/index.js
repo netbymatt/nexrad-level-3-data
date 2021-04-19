@@ -5,6 +5,7 @@ const messageHeader = require('./headers/message');
 const { parse: productDescription } = require('./headers/productdescription');
 const symbologyHeader = require('./headers/symbology');
 const tabularHeader = require('./headers/tabular');
+const graphicHeader = require('./headers/graphic');
 const radialPackets = require('./headers/radialpackets');
 const { products, productAbbreviations } = require('./products');
 
@@ -69,6 +70,18 @@ const nexradLevel3Data = (file) => {
 		result.symbology = symbologyHeader(decompressed);
 		// read the radial packet header
 		result.radialPackets = radialPackets(decompressed, result.productDescription, result.symbology.numberLayers);
+	}
+
+	// graphic parsing
+	if (result.productDescription.offsetGraphic !== 0) {
+		// jump to graphic, convert halfwords to bytes
+		const offsetGraphicBytes = textHeaderLength + result.productDescription.offsetGraphic * 2;
+		// error checking
+		if (offsetGraphicBytes > decompressed.getLength()) throw new Error(`Invalid graphic offset: ${result.productDescription.offsetGraphic}`);
+		decompressed.seek(offsetGraphicBytes);
+
+		// read the graphic header
+		result.graphic = graphicHeader(decompressed);
 	}
 
 	// tabular parsing

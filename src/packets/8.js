@@ -1,6 +1,8 @@
 const code = 10;
 const description = 'Unlinked Vector Packet';
 
+// i and j = -2048 < i,j < 2047
+
 const parser = (raf) => {
 	// parse the data
 	const result = {

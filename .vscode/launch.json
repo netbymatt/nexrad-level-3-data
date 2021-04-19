@@ -12,6 +12,15 @@
 				"<node_internals>/**"
 			],
 			"program": "${workspaceFolder}/test.js"
-		}
+		},
+		{
+			"name": "Test All",
+			"program": "${workspaceFolder}/testall.js",
+			"request": "launch",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "pwa-node"
+		},
 	]
 }

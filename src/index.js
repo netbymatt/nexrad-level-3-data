@@ -83,6 +83,10 @@ const nexradLevel3Data = (file) => {
 		result.tabular = tabularHeader(decompressed, product);
 	}
 
+	// get formatted data if it exists
+	const formatted = product?.formatter?.(result);
+	if (formatted) result.formatted = formatted;
+
 	return result;
 };
 

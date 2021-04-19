@@ -2,6 +2,7 @@ const code = 58;
 const abbreviation = ['NST'];
 const description = 'Storm Tracking Information';
 const { RandomAccessFile } = require('../../randomaccessfile');
+const formatter = require('./formatter');
 
 // 248 Nmi, Geographic and Non-geographic alphanumeric
 
@@ -25,6 +26,7 @@ module.exports = {
 	code,
 	abbreviation,
 	description,
+	formatter,
 
 	productDescription: {
 		halfwords30_53,

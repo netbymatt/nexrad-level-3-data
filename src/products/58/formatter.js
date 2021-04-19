@@ -5,7 +5,7 @@
 // " STORM    CURRENT POSITION              FORECAST POSITIONS               ERROR  ",
 // "  ID     AZRAN     MOVEMENT    15 MIN    30 MIN    45 MIN    60 MIN    FCST/MEAN",
 // "        (DEG/NM)  (DEG/KTS)   (DEG/NM)  (DEG/NM)  (DEG/NM)  (DEG/NM)     (NM)   "
-// returns an object {
+// returns an an arrya of objects {
 // id: id of storm assigned by algorithm
 // current: {deg,nm} current position from radar in degrees and nautical miles
 // movement: {deg,kts} movement of storm in degrees and knots

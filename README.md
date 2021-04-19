@@ -83,6 +83,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 |---|---|---|
 |56|N0S, N1S, N2S, N3S|Storm relative velocity|
 |58|NTP|Storm Tracking Information|
+|59|NHI|Hail Index|
 |78|N1P|One-hour precipitation
 |80|NTP|Storm Total Rainfall Accumulation|
 |165|N0H, N1H, N2H, N3H|Hydrometeor Classification
@@ -93,7 +94,9 @@ I've developed parsing algorithms for that the products that I needed most for m
 |Code|Description|
 |---|---|
 |0x0002|Text and Special Symbol Packets|
+|0x0008|Unlinked Vector Packet|
 |0x0010|Digital Radial Data Array Packet|
+|0x0013|Special Graphic Symbol Packet|
 |0xAF1F|Radial Data Packet (16 Data Levels)|
 
 ## ToDo

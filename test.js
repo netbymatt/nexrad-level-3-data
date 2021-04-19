@@ -8,6 +8,7 @@ const parser = require('./src');
 
 // 58 NTP Storm Tracking Information
 // const file = fs.readFileSync('./data/JAX_NST_2021_04_11_19_37_00');
+// const file = fs.readFileSync('./data/TBW_NST_2021_04_19_19_02');
 
 // 59 NHI Hail Index
 // const file = fs.readFileSync('./data/DTW_NHI_2021_04_08_19_47');

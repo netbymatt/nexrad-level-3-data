@@ -93,6 +93,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 ### Supported Packet Types
 |Code|Description|
 |---|---|
+|0x0001|Text and Special Symbol Packets|
 |0x0002|Text and Special Symbol Packets|
 |0x0008|Unlinked Vector Packet|
 |0x0010|Digital Radial Data Array Packet|

@@ -49,5 +49,5 @@ module.exports = {
 	code,
 	description,
 	parser,
-	key: featureKey,
+	supplemental: { featureKey },
 };

@@ -59,46 +59,66 @@ const nexradLevel3Data = (file) => {
 	}
 
 	// symbology parsing
-	if (result.productDescription.offsetSymbology !== 0) {
-	// jump to symbology, convert halfwords to bytes
-		const offsetSymbologyBytes = textHeaderLength + result.productDescription.offsetSymbology * 2;
-		// error checking
-		if (offsetSymbologyBytes > decompressed.getLength()) throw new Error(`Invalid symbology offset: ${result.productDescription.offsetSymbology}`);
-		decompressed.seek(offsetSymbologyBytes);
+	try {
+		if (result.productDescription.offsetSymbology !== 0) {
+			// jump to symbology, convert halfwords to bytes
+			const offsetSymbologyBytes = textHeaderLength + result.productDescription.offsetSymbology * 2;
+			// error checking
+			if (offsetSymbologyBytes > decompressed.getLength()) throw new Error(`Invalid symbology offset: ${result.productDescription.offsetSymbology}`);
+			decompressed.seek(offsetSymbologyBytes);
 
-		// read the symbology header
-		result.symbology = symbologyHeader(decompressed);
-		// read the radial packet header
-		result.radialPackets = radialPackets(decompressed, result.productDescription, result.symbology.numberLayers);
+			// read the symbology header
+			result.symbology = symbologyHeader(decompressed);
+			// read the radial packet header
+			result.radialPackets = radialPackets(decompressed, result.productDescription, result.symbology.numberLayers);
+		}
+	} catch (e) {
+		console.error(e.stack);
+		console.log('Unable to parse symbology data');
 	}
 
 	// graphic parsing
-	if (result.productDescription.offsetGraphic !== 0) {
+	try {
+		if (result.productDescription.offsetGraphic !== 0) {
 		// jump to graphic, convert halfwords to bytes
-		const offsetGraphicBytes = textHeaderLength + result.productDescription.offsetGraphic * 2;
-		// error checking
-		if (offsetGraphicBytes > decompressed.getLength()) throw new Error(`Invalid graphic offset: ${result.productDescription.offsetGraphic}`);
-		decompressed.seek(offsetGraphicBytes);
+			const offsetGraphicBytes = textHeaderLength + result.productDescription.offsetGraphic * 2;
+			// error checking
+			if (offsetGraphicBytes > decompressed.getLength()) throw new Error(`Invalid graphic offset: ${result.productDescription.offsetGraphic}`);
+			decompressed.seek(offsetGraphicBytes);
 
-		// read the graphic header
-		result.graphic = graphicHeader(decompressed);
+			// read the graphic header
+			result.graphic = graphicHeader(decompressed);
+		}
+	} catch (e) {
+		console.error(e.stack);
+		console.log('Unable to parse graphic data');
 	}
 
 	// tabular parsing
-	if (result.productDescription.offsetTabular !== 0) {
+	try {
+		if (result.productDescription.offsetTabular !== 0) {
 		// jump to tabular, convert halfwords to bytes
-		const offsetTabularBytes = textHeaderLength + result.productDescription.offsetTabular * 2;
-		// error checking
-		if (offsetTabularBytes > decompressed.getLength()) throw new Error(`Invalid tabular offset: ${result.productDescription.offsetTabular}`);
-		decompressed.seek(offsetTabularBytes);
+			const offsetTabularBytes = textHeaderLength + result.productDescription.offsetTabular * 2;
+			// error checking
+			if (offsetTabularBytes > decompressed.getLength()) throw new Error(`Invalid tabular offset: ${result.productDescription.offsetTabular}`);
+			decompressed.seek(offsetTabularBytes);
 
-		// read the tabular header
-		result.tabular = tabularHeader(decompressed, product);
+			// read the tabular header
+			result.tabular = tabularHeader(decompressed, product);
+		}
+	} catch (e) {
+		console.error(e.stack);
+		console.log('Unable to parse tabular data');
 	}
 
 	// get formatted data if it exists
-	const formatted = product?.formatter?.(result);
-	if (formatted) result.formatted = formatted;
+	try {
+		const formatted = product?.formatter?.(result);
+		if (formatted) result.formatted = formatted;
+	} catch (e) {
+		console.error(e.stack);
+		console.log('Unable to parse formatted tabular data');
+	}
 
 	return result;
 };

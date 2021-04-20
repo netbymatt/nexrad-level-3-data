@@ -23,6 +23,7 @@ const halfwords30_53 = (data) => {
 		dependent50: raf.read(2),
 		compressionMethod: raf.readShort(),
 		uncompressedSize: (raf.readUShort() << 16) + raf.readUShort(),
+		plot: { maxDataValue: 150 },
 	};
 };
 

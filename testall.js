@@ -7,9 +7,12 @@ const files = fs.readdirSync('./data/');
 // test each file
 files.forEach((file) => {
 	console.log(file);
-	const data = fs.readFileSync(`./data/${file}`);
-	console.log(parser(data));
+	try {
+		const data = fs.readFileSync(`./data/${file}`);
+		console.log(parser(data));
+	} catch (e) {
+		console.error(e.stack);
+	}
 });
 
-// pass to parser as a string or buffer
-// const level3Data = parser(file);
+console.log();

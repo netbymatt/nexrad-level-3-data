@@ -1,6 +1,10 @@
+const symbology6 = require('./symbology6');
+
 const parse = (raf) => {
 	const blockDivider = raf.readShort();
 	const blockId = raf.readShort();
+	// block id 6 is undocumented but appears to be text
+	if (blockId === 6) return symbology6(raf);
 	const blockLength = raf.readInt();
 
 	// test some known values

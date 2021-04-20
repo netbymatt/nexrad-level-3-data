@@ -12,7 +12,10 @@ const parser = require('./src');
 
 // 59 NHI Hail Index
 // const file = fs.readFileSync('./data/DTW_NHI_2021_04_08_19_47');
-const file = fs.readFileSync('./data/TBW_NHI_2021_04_19_19_02');
+// const file = fs.readFileSync('./data/TBW_NHI_2021_04_19_19_02');
+
+// 62 NSS
+const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
 
 // 78 One-hour precipitation
 // const file = fs.readFileSync('./data/LOT_N1P_2021_01_31_11_06_30');

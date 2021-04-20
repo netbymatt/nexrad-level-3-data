@@ -1,23 +1,31 @@
-const messageHeader = require('./message');
-const { parse: productDescription } = require('./productdescription');
+const parseMessageHeader = require('./message');
+const { parse: parseProductDescription } = require('./productdescription');
 
 const parse = (raf, product) => {
+	const blockDivider = raf.readShort();
+	const blockId = raf.readShort();
+	const blockLength = raf.readInt();
+
+	// test some known values
+	if (blockDivider !== -1) throw new Error(`Invalid tabular block divider: ${blockDivider}`);
+	if (blockId !== 3) throw new Error(`Invalid tabular id: ${blockId}`);
+	if (blockLength < 1 || blockLength > 65535) throw new Error(`Invalid block length ${blockLength}`);
+	if ((blockLength + raf.getPos() - 8) > raf.getLength()) throw new Error(`Block length ${blockLength} overruns file length for block id: ${blockId}`);
+
+	const messageHeader = parseMessageHeader(raf);
+	const productDescription = parseProductDescription(raf, product);
+	const blockDivider2 = raf.readShort();
+
+	// test some known values
+	if (blockDivider2 !== -1) throw new Error(`Invalid second tabular block divider: ${blockDivider2}`);
+
 	const result = {
-		blockDivider: raf.readShort(),
-		blockId: raf.readShort(),
-		blockLength: raf.readInt(),
-		messageHeader: messageHeader(raf),
-		productDescription: productDescription(raf, product),
-		blockDivider2: raf.readShort(),
+		messageHeader,
+		productDescription,
 		totalPages: raf.readShort(),
 		charactersPerLine: raf.readShort(),
 		pages: [],
 	};
-
-	// test some known values
-	if (result.blockDivider !== -1) throw new Error(`Invalid tabular block divider: ${result.blockDivider}`);
-	if (result.blockId !== 3) throw new Error(`Invalid tabular id: ${result.blockId}`);
-	if (result.blockDivider2 !== -1) throw new Error(`Invalid second tabular block divider: ${result.blockDivider2}`);
 
 	// loop through data until end of page reached
 	for (let i = 0; i < result.totalPages; i += 1) {

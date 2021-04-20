@@ -1,17 +1,21 @@
 const { parser } = require('../packets');
 
 const parse = (raf) => {
+	const blockDivider = raf.readShort();
+	const blockId = raf.readShort();
+	const blockLength = raf.readInt();
+
+	// test some known values
+	if (blockDivider !== -1) throw new Error(`Invalid graphic block divider: ${blockDivider}`);
+	if (blockId !== 2) throw new Error(`Invalid graphic id: ${blockId}`);
+	if (blockLength < 1 || blockLength > 65535) throw new Error(`Invalid block length ${blockLength}`);
+	if ((blockLength + raf.getPos() - 8) > raf.getLength()) throw new Error(`Block length ${blockLength} overruns file length for block id: ${blockId}`);
+
 	const result = {
-		blockDivider: raf.readShort(),
-		blockId: raf.readShort(),
-		blockLength: raf.readInt(),
 		numberPages: raf.readShort(),
 		pages: [],
 	};
 
-	// test some known values
-	if (result.blockDivider !== -1) throw new Error(`Invalid graphic block divider: ${result.blockDivider}`);
-	if (result.blockId !== 2) throw new Error(`Invalid graphic id: ${result.blockId}`);
 	if (result.numberPages < 1 || result.numberPages > 48 - 1) throw new Error(`Invalid graphic number of pages: ${result.numberPages}`);
 
 	// read each page

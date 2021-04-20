@@ -11,36 +11,30 @@ const parse = (raf) => {
 	if (blockLength < 1 || blockLength > 65535) throw new Error(`Invalid block length ${blockLength}`);
 	if ((blockLength + raf.getPos() - 8) > raf.getLength()) throw new Error(`Block length ${blockLength} overruns file length for block id: ${blockId}`);
 
-	const result = {
-		numberPages: raf.readShort(),
-		pages: [],
-	};
+	const numberPages = raf.readShort();
 
-	if (result.numberPages < 1 || result.numberPages > 48 - 1) throw new Error(`Invalid graphic number of pages: ${result.numberPages}`);
+	const packets = [];
+
+	if (numberPages < 1 || numberPages > 48 - 1) throw new Error(`Invalid graphic number of pages: ${numberPages}`);
 
 	// read each page
-	for (let pageNum = 0; pageNum < result.numberPages; pageNum += 1) {
-		const page = {
-			number: raf.readShort(),
-			length: raf.readShort(),
-			packets: [],
-		};
+	for (let pageNum = 0; pageNum < numberPages; pageNum += 1) {
+		const pageNumber = raf.readShort();
+		const pageLength = raf.readShort();
 
 		// calculate end byte
-		const endByte = raf.getPos() + page.length;
+		const endByte = raf.getPos() + pageLength;
 
 		// test page number
-		if (pageNum + 1 !== page.number) throw new Error(`Invalid page number: ${page.number}`);
+		if (pageNum + 1 !== pageNumber) throw new Error(`Invalid page number: ${pageNumber}`);
 
 		// loop through all packets
 		while (raf.getPos() < endByte) {
-			page.packets.push(parser(raf));
+			packets.push(parser(raf));
 		}
-
-		result.pages.push(page);
 	}
 
-	return result;
+	return packets;
 };
 
 //

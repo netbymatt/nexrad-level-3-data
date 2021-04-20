@@ -3,9 +3,14 @@ const description = 'Radial Data Packet (16 Data Levels)';
 const rle = require('./utilities/rle');
 
 const parser = (raf) => {
+	// packet header
+	const packetCode = raf.readUShort();
+
+	// test packet code
+	if (packetCode !== code) throw new Error(`Packet codes do not match ${code} !== ${packetCode}`);
+
 	// parse the data
 	const result = {
-		packetCode: raf.readUShort(),
 		firstBin: raf.readShort(),
 		numberBins: raf.readShort(),
 		iSweepCenter: raf.readShort(),
@@ -14,7 +19,7 @@ const parser = (raf) => {
 		numRadials: raf.readShort(),
 	};
 	// also providethe packet code in hex
-	result.packetCodeHex = result.packetCode.toString(16);
+	result.packetCodeHex = packetCode.toString(16);
 
 	// loop through the radials and bins
 	// return a structure of [radial][bin]

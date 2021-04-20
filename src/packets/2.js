@@ -2,18 +2,23 @@ const code = 2;
 const description = 'Text and Special Symbol Packets';
 
 const parser = (raf) => {
+	// packet header
+	const packetCode = raf.readUShort();
+	const lengthOfBlock = raf.readShort();
+
+	// test packet code
+	if (packetCode !== code) throw new Error(`Packet codes do not match ${code} !== ${packetCode}`);
+
 	// parse the data
 	const result = {
-		packetCode: raf.readUShort(),
-		lengthOfBlock: raf.readShort(),
 		iStartingPoint: raf.readShort(),
 		jStartingPoint: raf.readShort(),
 	};
 	// also providethe packet code in hex
-	result.packetCodeHex = result.packetCode.toString(16);
+	result.packetCodeHex = packetCode.toString(16);
 
 	// read the result length
-	result.text = raf.readString(result.lengthOfBlock - 4);
+	result.text = raf.readString(lengthOfBlock - 4);
 
 	return result;
 };

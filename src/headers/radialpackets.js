@@ -11,7 +11,7 @@ const parse = (raf, productDescription, layerCount) => {
 		// read the header
 		const layerDivider = raf.readShort();
 		const layerLength = raf.readInt();
-		if (layerDivider !== -1) throw new Error(`Invalid layer divider ${layerDivider} in layer ${layerDivider}`);
+		if (layerDivider !== -1) throw new Error(`Invalid layer divider ${layerDivider} in layer ${layerIndex}`);
 		if (layerLength + raf.getPos() > raf.getLength()) throw new Error(`Layer size overruns block size for layer ${layerIndex}`);
 
 		try {

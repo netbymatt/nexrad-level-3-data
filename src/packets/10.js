@@ -2,9 +2,14 @@ const code = 16;
 const description = 'Digital Radial Data Array Packet';
 
 const parser = (raf, productDescription) => {
+	// packet header
+	const packetCode = raf.readUShort();
+
+	// test packet code
+	if (packetCode !== code) throw new Error(`Packet codes do not match ${code} !== ${packetCode}`);
+
 	// parse the data
 	const result = {
-		packetCode: raf.readUShort(),
 		firstBin: raf.readShort(),
 		numberBins: raf.readShort(),
 		iSweepCenter: raf.readShort(),
@@ -13,7 +18,7 @@ const parser = (raf, productDescription) => {
 		numberRadials: raf.readShort(),
 	};
 	// also providethe packet code in hex
-	result.packetCodeHex = result.packetCode.toString(16);
+	result.packetCodeHex = packetCode.toString(16);
 
 	// set up scaling or defaults
 	const scaling = {

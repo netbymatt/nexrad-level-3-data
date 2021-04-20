@@ -15,18 +15,23 @@ const featureKey = {
 };
 
 const parser = (raf) => {
+	// packet header
+	const packetCode = raf.readUShort();
+	const lengthOfBlock = raf.readShort();
+
+	// test packet code
+	if (packetCode !== code) throw new Error(`Packet codes do not match ${code} !== ${packetCode}`);
+
 	// parse the data
 	const result = {
-		packetCode: raf.readUShort(),
-		lengthOfBlock: raf.readShort(),
 		points: [],
 	};
 	// also providethe packet code in hex
-	result.packetCodeHex = result.packetCode.toString(16);
+	result.packetCodeHex = packetCode.toString(16);
 
 	// read all special symbols
 	let i = 0;
-	for (i = 0; (i < result.lengthOfBlock) && (i + 8 < result.lengthOfBlock); i += 8) {
+	for (i = 0; (i < lengthOfBlock) && (i + 8 < lengthOfBlock); i += 8) {
 		const iStartingPoint = raf.readShort();
 		const jStartingPoint = raf.readShort();
 		const pointFeatureType = raf.readShort();

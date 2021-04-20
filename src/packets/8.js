@@ -4,18 +4,23 @@ const description = 'Unlinked Vector Packet';
 // i and j = -2048 < i,j < 2047
 
 const parser = (raf) => {
+	// packet header
+	const packetCode = raf.readUShort();
+	const lengthOfBlock = raf.readShort();
+
+	// test packet code
+	if (packetCode !== code) throw new Error(`Packet codes do not match ${code} !== ${packetCode}`);
+
 	// parse the data
 	const result = {
-		packetCode: raf.readUShort(),
-		lengthOfBlock: raf.readShort(),
 		color: raf.readShort(),
 		vectors: [],
 	};
 	// also provide the packet code in hex
-	result.packetCodeHex = result.packetCode.toString(16);
+	result.packetCodeHex = packetCode.toString(16);
 
 	// calculate end byte (off by 2 from result.color)
-	const endByte = raf.getPos() + result.lengthOfBlock - 2;
+	const endByte = raf.getPos() + lengthOfBlock - 2;
 
 	// read vectors for length of packet
 	while (raf.getPos() < endByte) {

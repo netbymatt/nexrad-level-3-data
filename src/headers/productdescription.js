@@ -3,10 +3,13 @@ const MODE_CLEAN_AIR = 1;
 const MODE_PRECIPITATION = 2;
 
 const parse = (raf, product) => {
+	const divider = raf.readShort();
+	// check fixed data values
+	if (divider !== -1) throw new Error(`Invalid product description divider: ${divider}`);
+
 	const result = {
 		abbreviation: product.abbreviation,
 		description: product.description,
-		divider: raf.readShort(),
 		latitude: raf.readInt() / 1000,
 		longitude: raf.readInt() / 1000,
 		height: raf.readShort(),
@@ -32,8 +35,6 @@ const parse = (raf, product) => {
 		supplemental: product.supplemental,
 	};
 
-	// check fixed data values
-	if (result.divider !== -1) throw new Error(`Invalid product description divider: ${result.divider}`);
 	return result;
 };
 

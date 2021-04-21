@@ -2,14 +2,17 @@
 
 const parse = (raf) => {
 	const pages = [];
+	let lines = [];
 
 	// loop until a -1 is encounted
 	let length = raf.readShort();
 	do {
 		while (length !== -1) {
-			pages.push(raf.readString(length));
+			lines.push(raf.readString(length));
 			length = raf.readShort();
 		}
+		pages.push(lines);
+		lines = [];
 		length = raf.readShort();
 	} while (length === 80);
 

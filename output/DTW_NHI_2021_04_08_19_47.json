@@ -1,0 +1,460 @@
+{
+  "textHeader": {
+    "fileType": "SDUS63",
+    "id": "KDTX",
+    "ddhhmm": "181947",
+    "type": "NHI",
+    "id3": "DTW"
+  },
+  "messageHeader": {
+    "code": 59,
+    "julianDate": 18736,
+    "seconds": 71412,
+    "length": 3512,
+    "source": 3015,
+    "dest": 0,
+    "blocks": 5
+  },
+  "productDescription": {
+    "abbreviation": [
+      "NHI"
+    ],
+    "description": "Hail IndexStorm Tracking Information",
+    "latitude": 42.111,
+    "longitude": -83.515,
+    "height": 772,
+    "code": 59,
+    "mode": 2,
+    "vcp": 90,
+    "sequenceNumber": 3793,
+    "volumeScanNumber": 28,
+    "volumeScanDate": 18736,
+    "volumeScanTime": 71278,
+    "productDate": 18736,
+    "productTime": 71411,
+    "dependent27_28": {
+      "type": "Buffer",
+      "data": [
+        0,
+        2,
+        0,
+        0
+      ]
+    },
+    "elevationNumber": 0,
+    "dependent30_53": {
+      "type": "Buffer",
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "version": 1,
+    "spotBlank": 0,
+    "offsetSymbology": 60,
+    "offsetGraphic": 82,
+    "offsetTabular": 376
+  },
+  "symbology": {
+    "numberLayers": 1
+  },
+  "radialPackets": [
+    {
+      "points": [
+        {
+          "iStartingPoint": 5,
+          "jStartingPoint": -338,
+          "pointFeatureType": 0,
+          "pointFeatureAttribute": 0
+        }
+      ],
+      "packetCodeHex": "13"
+    }
+  ],
+  "graphic": [
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": "  STORM ID            D0       E0                                               "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": "  AZ/RAN         179/ 46  196/ 47                                               "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": "  POSH/POH         0/  0    0/  0                                               "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": "  MAX HAIL SIZE     0.00     0.00                                               "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": "  0/-20 C TEMP ALT  5.6/14.5 KFT(MSL) - LAST CHANGED 19:00 04/18/21             "
+    },
+    {
+      "color": 2,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 487,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 487,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 487,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 487,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 487,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 487,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 2,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 109,
+            "j": 0
+          },
+          "end": {
+            "i": 109,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 172,
+            "j": 0
+          },
+          "end": {
+            "i": 172,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 235,
+            "j": 0
+          },
+          "end": {
+            "i": 235,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 298,
+            "j": 0
+          },
+          "end": {
+            "i": 298,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 361,
+            "j": 0
+          },
+          "end": {
+            "i": 361,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 424,
+            "j": 0
+          },
+          "end": {
+            "i": 424,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 487,
+            "j": 0
+          },
+          "end": {
+            "i": 487,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    }
+  ],
+  "tabular": {
+    "messageHeader": {
+      "code": 102,
+      "julianDate": 0,
+      "seconds": 0,
+      "length": 2752,
+      "source": 3015,
+      "dest": 0,
+      "blocks": 3
+    },
+    "productDescription": {
+      "abbreviation": [
+        "NHI"
+      ],
+      "description": "Hail IndexStorm Tracking Information",
+      "latitude": 42.111,
+      "longitude": -83.515,
+      "height": 772,
+      "code": 102,
+      "mode": 2,
+      "vcp": 90,
+      "sequenceNumber": 0,
+      "volumeScanNumber": 28,
+      "volumeScanDate": 18736,
+      "volumeScanTime": 71278,
+      "productDate": 18736,
+      "productTime": 71411,
+      "dependent27_28": {
+        "type": "Buffer",
+        "data": [
+          0,
+          2,
+          0,
+          0
+        ]
+      },
+      "elevationNumber": 0,
+      "dependent30_53": {
+        "type": "Buffer",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "version": 1,
+      "spotBlank": 0,
+      "offsetSymbology": 60,
+      "offsetGraphic": 0,
+      "offsetTabular": 0
+    },
+    "totalPages": 2,
+    "charactersPerLine": 80,
+    "pages": [
+      [
+        "                                      HAIL                                      ",
+        "     RADAR ID 3015  DATE/TIME 04:18:21/19:47:58   NUMBER OF STORM CELLS   2     ",
+        "                                                                                ",
+        "      STORM       PROBABILITY OF       PROBABILITY OF       MAX EXPECTED        ",
+        "        ID        SEVERE HAIL (%)         HAIL (%)         HAIL SIZE (IN)       ",
+        "                                                                                ",
+        "        D0               0                    0                 0.00            ",
+        "        E0               0                    0                 0.00            ",
+        "                                                                                ",
+        "                                                                                ",
+        "                                                                                ",
+        "                                                                                ",
+        "                                                                                ",
+        "                                                                                ",
+        "                                                                                ",
+        "                                                                                "
+      ],
+      [
+        "                        HAIL DETECTION ADAPTATION DATA                          ",
+        "                                                                                ",
+        "    5.6 (KFT) HEIGHT (0 DEG CELSIUS)    | 1.625  (KM) POH HEIGHT DIFFERENCE #1  ",
+        "   14.5 (KFT) HEIGHT (-20 DEG CELSIUS)  | 1.875  (KM) POH HEIGHT DIFFERENCE #2  ",
+        "0.5E-03       HKE COEFFICIENT #1        | 2.125  (KM) POH HEIGHT DIFFERENCE #3  ",
+        "   .084       HKE COEFFICIENT #2        | 2.375  (KM) POH HEIGHT DIFFERENCE #4  ",
+        "   10.0       HKE COEFFICIENT #3        | 2.625  (KM) POH HEIGHT DIFFERENCE #5  ",
+        "   29.0       POSH COEFFICIENT          | 2.925  (KM) POH HEIGHT DIFFERENCE #6  ",
+        "     50   (%) POSH OFFSET               | 3.300  (KM) POH HEIGHT DIFFERENCE #7  ",
+        "   0.10       SHI HAIL SIZE COEFFICIENT | 3.750  (KM) POH HEIGHT DIFFERENCE #8  ",
+        "    0.5       SHI HAIL SIZE EXPONENT    | 4.500  (KM) POH HEIGHT DIFFERENCE #9  ",
+        "     40 (DBZ) THR HKE REF WGT LOWER LIM | 5.500  (KM) POH HEIGHT DIFFERENCE #10 ",
+        "     50 (DBZ) THR HKE REF WGT UPPER LIM |    45 (DBZ) THR MIN REFLECTIVITY POH  ",
+        "     30   (%) THRESH(RCM PROBABLE HAIL) |    50   (%)  THRESH(RCM POSITIVE HAIL)",
+        "  57.5 (10E2 J/M**2/S) WTSM COEFFICIENT |  -96.3 (10E5 J/M/S) WTSM OFFSET       ",
+        "    230 (KM)  MAX HAIL PROCESSING RANGE                                         "
+      ]
+    ]
+  },
+  "formatted": {
+    "hail": {
+      "D0": {
+        "probSevere": 0,
+        "probHail": 0,
+        "maxSize": 0
+      },
+      "E0": {
+        "probSevere": 0,
+        "probHail": 0,
+        "maxSize": 0
+      }
+    }
+  }
+}

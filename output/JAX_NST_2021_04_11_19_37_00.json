@@ -1,0 +1,714 @@
+{
+  "textHeader": {
+    "fileType": "SDUS32",
+    "id": "KJAX",
+    "ddhhmm": "111935",
+    "type": "NST",
+    "id3": "JAX"
+  },
+  "messageHeader": {
+    "code": 58,
+    "julianDate": 18729,
+    "seconds": 70736,
+    "length": 4118,
+    "source": 383,
+    "dest": 0,
+    "blocks": 5
+  },
+  "productDescription": {
+    "abbreviation": [
+      "NST"
+    ],
+    "description": "Storm Tracking Information",
+    "latitude": 30.485,
+    "longitude": -81.702,
+    "height": 159,
+    "code": 58,
+    "mode": 2,
+    "vcp": 212,
+    "sequenceNumber": 451,
+    "volumeScanNumber": 21,
+    "volumeScanDate": 18729,
+    "volumeScanTime": 70510,
+    "productDate": 18729,
+    "productTime": 70735,
+    "dependent27_28": {
+      "type": "Buffer",
+      "data": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "elevationNumber": 0,
+    "elevationAngle": 0,
+    "dependent31_46": {
+      "type": "Buffer",
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "maxNegativeVelocity": 7,
+    "maxPositiveVelocity": 0,
+    "motionSourceFlag": 0,
+    "dependent50": 0,
+    "averageStormSpeed": 0,
+    "averageStormDirection": 0,
+    "version": 1,
+    "spotBlank": 0,
+    "offsetSymbology": 60,
+    "offsetGraphic": 219,
+    "offsetTabular": 802
+  },
+  "symbology": {
+    "numberLayers": 1
+  },
+  "radialPackets": [
+    {
+      "iStartingPoint": -1156,
+      "jStartingPoint": 67,
+      "packetCodeHex": "2",
+      "text": "\" "
+    }
+  ],
+  "graphic": [
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " STORM ID        L9        J7        P7        H0        B1        I2           "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " AZ/RAN    273/156   140/223   263/160   188/ 95   181/ 86    96/ 98            "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " FCST MVT     NEW    236/ 30      NEW       NEW       NEW       NEW             "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " ERR/MEAN  0.0/ 0.0  1.0/ 1.1  0.0/ 0.0  0.0/ 0.0  0.0/ 0.0  0.0/ 0.0           "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " DBZM HGT   48 25.9   42 47.7   46 26.8   49 11.4   49  9.9   38 12.0           "
+    },
+    {
+      "color": 5,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 487,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 487,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 487,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 487,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 487,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 487,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 5,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 67,
+            "j": 0
+          },
+          "end": {
+            "i": 67,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 137,
+            "j": 0
+          },
+          "end": {
+            "i": 137,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 207,
+            "j": 0
+          },
+          "end": {
+            "i": 207,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 277,
+            "j": 0
+          },
+          "end": {
+            "i": 277,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 347,
+            "j": 0
+          },
+          "end": {
+            "i": 347,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 417,
+            "j": 0
+          },
+          "end": {
+            "i": 417,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 487,
+            "j": 0
+          },
+          "end": {
+            "i": 487,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " STORM ID        M1                                                             "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " AZ/RAN    182/ 69                                                              "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " FCST MVT  262/ 57                                                              "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " ERR/MEAN  3.6/ 2.5                                                             "
+    },
+    {
+      "color": 1,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " DBZM HGT   42  9.9                                                             "
+    },
+    {
+      "color": 5,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 487,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 487,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 487,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 487,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 487,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 487,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 5,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 67,
+            "j": 0
+          },
+          "end": {
+            "i": 67,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 137,
+            "j": 0
+          },
+          "end": {
+            "i": 137,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 207,
+            "j": 0
+          },
+          "end": {
+            "i": 207,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 277,
+            "j": 0
+          },
+          "end": {
+            "i": 277,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 347,
+            "j": 0
+          },
+          "end": {
+            "i": 347,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 417,
+            "j": 0
+          },
+          "end": {
+            "i": 417,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 487,
+            "j": 0
+          },
+          "end": {
+            "i": 487,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    }
+  ],
+  "tabular": {
+    "messageHeader": {
+      "code": 101,
+      "julianDate": 0,
+      "seconds": 0,
+      "length": 2506,
+      "source": 383,
+      "dest": 0,
+      "blocks": 5
+    },
+    "productDescription": {
+      "abbreviation": [
+        "NST"
+      ],
+      "description": "Storm Tracking Information",
+      "latitude": 30.485,
+      "longitude": -81.702,
+      "height": 159,
+      "code": 101,
+      "mode": 2,
+      "vcp": 212,
+      "sequenceNumber": 0,
+      "volumeScanNumber": 21,
+      "volumeScanDate": 18729,
+      "volumeScanTime": 70510,
+      "productDate": 18729,
+      "productTime": 70735,
+      "dependent27_28": {
+        "type": "Buffer",
+        "data": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "elevationNumber": 0,
+      "elevationAngle": 0,
+      "dependent31_46": {
+        "type": "Buffer",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "maxNegativeVelocity": 7,
+      "maxPositiveVelocity": 0,
+      "motionSourceFlag": 0,
+      "dependent50": 0,
+      "averageStormSpeed": 0,
+      "averageStormDirection": 0,
+      "version": 1,
+      "spotBlank": 0,
+      "offsetSymbology": 60,
+      "offsetGraphic": 0,
+      "offsetTabular": 0
+    },
+    "totalPages": 2,
+    "charactersPerLine": 80,
+    "pages": [
+      [
+        "                            STORM POSITION/FORECAST                             ",
+        "     RADAR ID 383  DATE/TIME 04:11:21/19:35:10   NUMBER OF STORM CELLS   7      ",
+        "                                                                                ",
+        "                   AVG SPEED 43 KTS    AVG DIRECTION 253 DEG                    ",
+        "                                                                                ",
+        " STORM    CURRENT POSITION              FORECAST POSITIONS               ERROR  ",
+        "  ID     AZRAN     MOVEMENT    15 MIN    30 MIN    45 MIN    60 MIN    FCST/MEAN",
+        "        (DEG/NM)  (DEG/KTS)   (DEG/NM)  (DEG/NM)  (DEG/NM)  (DEG/NM)     (NM)   ",
+        "                                                                                ",
+        "  L9     273/156     NEW       NO DATA   NO DATA   NO DATA   NO DATA    0.0/ 0.0",
+        "  J7     140/223   236/ 30     138/224   136/225   NO DATA   NO DATA    1.0/ 1.1",
+        "  P7     263/160     NEW       NO DATA   NO DATA   NO DATA   NO DATA    0.0/ 0.0",
+        "  H0     188/ 95     NEW       NO DATA   NO DATA   NO DATA   NO DATA    0.0/ 0.0",
+        "  B1     181/ 86     NEW       NO DATA   NO DATA   NO DATA   NO DATA    0.0/ 0.0",
+        "  I2      96/ 98     NEW       NO DATA   NO DATA   NO DATA   NO DATA    0.0/ 0.0",
+        "  M1     182/ 69   262/ 57     NO DATA   NO DATA   NO DATA   NO DATA    3.6/ 2.5"
+      ],
+      [
+        "              STORM CELL TRACKING/FORECAST ADAPTATION DATA                      ",
+        "                                                                                ",
+        "    225   (DEG) DEFAULT (DIRECTION)      2.5   (M/S) THRESH (MINIMUM SPEED)     ",
+        "   25.0   (KTS) DEFAULT (SPEED)           20    (KM) ALLOWABLE ERROR            ",
+        "     20   (MIN) TIME (MAXIMUM)            15   (MIN) FORECAST INTERVAL          ",
+        "     10         NUMBER OF PAST VOLUMES     4         NUMBER OF INTERVALS        ",
+        "   30.0   (M/S) CORRELATION SPEED         15   (MIN) ERROR INTERVAL             ",
+        "                                                                                ",
+        "                                                                                ",
+        "              SCIT REFLECTIVITY MEDIAN FILTER                                   ",
+        "                                                                                ",
+        "    7.0   (KM)  FILTER KERNEL SIZE       0.5         THRESH (FILTER FRACTION)   ",
+        "    Yes         REFLECTIVITY FILTERED                                           "
+      ]
+    ]
+  },
+  "formatted": {
+    "storms": {
+      "L9": {
+        "current": {
+          "deg": 273,
+          "nm": 156
+        },
+        "movement": "new",
+        "forecast": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "J7": {
+        "current": {
+          "deg": 140,
+          "nm": 223
+        },
+        "movement": {
+          "deg": 236,
+          "kts": 30
+        },
+        "forecast": [
+          {
+            "deg": 138,
+            "nm": 224
+          },
+          {
+            "deg": 136,
+            "nm": 225
+          },
+          null,
+          null
+        ]
+      },
+      "P7": {
+        "current": {
+          "deg": 263,
+          "nm": 160
+        },
+        "movement": "new",
+        "forecast": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "H0": {
+        "current": {
+          "deg": 188,
+          "nm": 95
+        },
+        "movement": "new",
+        "forecast": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "B1": {
+        "current": {
+          "deg": 181,
+          "nm": 86
+        },
+        "movement": "new",
+        "forecast": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "I2": {
+        "current": {
+          "deg": 96,
+          "nm": 98
+        },
+        "movement": "new",
+        "forecast": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "M1": {
+        "current": {
+          "deg": 182,
+          "nm": 69
+        },
+        "movement": {
+          "deg": 262,
+          "kts": 57
+        },
+        "forecast": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  }
+}

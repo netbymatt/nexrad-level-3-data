@@ -16,7 +16,7 @@ module.exports = (data) => {
 	// extract relevant data
 	const pages = data?.tabular?.pages;
 	if (!pages) return {};
-	const result = [];
+	const result = {};
 
 	// format line by line
 	pages.forEach((page) => {
@@ -37,9 +37,9 @@ module.exports = (data) => {
 			// format the result
 			const [current, movement, ...forecast] = stringPositions;
 			// store to array
-			result.push({
-				id, current, movement, forecast,
-			});
+			result[id] = {
+				current, movement, forecast,
+			};
 		});
 	});
 

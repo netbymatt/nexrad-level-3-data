@@ -15,7 +15,7 @@ module.exports = (data) => {
 	// extract relevant data
 	const pages = data?.tabular?.pages;
 	if (!pages) return {};
-	const result = [];
+	const result = {};
 
 	// format line by line
 	pages.forEach((page) => {
@@ -27,12 +27,11 @@ module.exports = (data) => {
 			// format the result
 			const [, id, probSevere, probHail, maxSize] = [...rawMatch];
 			// store to array
-			result.push({
-				id,
+			result[id] = {
 				probSevere: +probSevere,
 				probHail: +probHail,
 				maxSize: +maxSize,
-			});
+			};
 		});
 	});
 

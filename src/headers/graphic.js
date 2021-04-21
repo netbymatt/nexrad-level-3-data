@@ -1,7 +1,16 @@
 const { parser } = require('../packets');
+const graphic22 = require('./graphic22');
 
 const parse = (raf) => {
 	const blockDivider = raf.readShort();
+	// for product 62 the block divider is not present and is a packet code 22
+	if (blockDivider === 22) {
+		// jump back to allow full parsing of packet
+		raf.skip(-2);
+		// call the special packet 22 parser
+		return graphic22(raf);
+	}
+
 	const blockId = raf.readShort();
 	const blockLength = raf.readInt();
 

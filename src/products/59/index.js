@@ -1,6 +1,6 @@
 const code = 59;
 const abbreviation = ['NHI'];
-const description = 'Hail IndexStorm Tracking Information';
+const description = 'Hail Index';
 const formatter = require('./formatter');
 
 // 124 Nmi, Geographic and Non-geographic alphanumeric

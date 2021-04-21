@@ -1,6 +1,6 @@
 {
   "name": "nexrad-level-3-data",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Parsing of NEXRAD level 3 data files",
   "main": "src/index.js",
   "scripts": {

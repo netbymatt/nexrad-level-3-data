@@ -8,7 +8,7 @@ const ijToAzDeg = (i, j, rawMax = 4096, range = 248, conversion = 1.15078) => {
 	const nm = ((Math.sqrt(i ** 2 + j ** 2) / rawMax) * range) * conversion;
 	let deg = 0;
 	// short circuit potential divide by zero
-	if (i !== j) {
+	if (i === 0) {
 		// calculate degrees, then rotate due to north = up = 0 deg convention
 		deg = (Math.atan(-j / i) * 180) / Math.PI + 90;
 		// coerce to 0<=deg<360

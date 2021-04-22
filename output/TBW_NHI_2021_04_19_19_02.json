@@ -19,7 +19,7 @@
     "abbreviation": [
       "NHI"
     ],
-    "description": "Hail IndexStorm Tracking Information",
+    "description": "Hail Index",
     "latitude": 27.705,
     "longitude": -82.402,
     "height": 122,
@@ -881,7 +881,7 @@
       "abbreviation": [
         "NHI"
       ],
-      "description": "Hail IndexStorm Tracking Information",
+      "description": "Hail Index",
       "latitude": 27.705,
       "longitude": -82.402,
       "height": 122,

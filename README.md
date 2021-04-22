@@ -1,6 +1,6 @@
 # nexrad-level-3-data
 
-### v0.3.1
+### v0.3.2
 A javascript implementation for decoding Nexrad Level III radar files.
 
 You can find more information on how radar data is encoded at [NOAA](https://www.roc.noaa.gov/WSR88D/BuildInfo/Files.aspx). The work in this project is based mainly on the document [2620001 ICD FOR THE RPG TO CLASS 1 USER - Build 19.0](https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001Y.pdf).
@@ -9,6 +9,7 @@ You can find more information on how radar data is encoded at [NOAA](https://www
 1. [Install](#install)
 1. [Usage](#usage)
 1. [Examples](#examples)
+1. [Testing](#testing)
 1. [API](#api)
 1. [Background Information](#background-information)
 1. [Work In Progress](#work-in-progress)
@@ -18,14 +19,14 @@ You can find more information on how radar data is encoded at [NOAA](https://www
 ## Install
 
 ``` bash
-$ git clone https://github.com/netbymatt/nexrad-level-3-data.git
+$ npm install nexrad-level-3-data
 ```
 
 ## Usage
-Useage is straight forward, provide a string or buffer containing any of the [available products](#available-products).
+Usage is straight forward, provide a string or buffer containing any of the [available products](#available-products).
 ``` javascript
 const fs = require('fs');
-const parser = require('./src');
+const parser = require('nexrad-level-3-data');
 
 const file = fs.readFileSync('./data/LOT_N0H_2021_01_31_11_06_30');
 const level3Data = parser(file);
@@ -37,6 +38,13 @@ console.log(level3Data);
 Data and corresponding output are provided for quick and easy testing and experimentation. Please see the ```./data``` and ```./output``` folders.
 
 An example of plotting data produced from this library can be found in [nexrad-level-3-plot](https://github.com/netbymatt/nexrad-level-3-plot)
+
+## Testing
+A test script is provided and will generate ```.json``` output from all of the files in the ```./data``` folder.
+```
+npm test
+```
+A successful test will generate several ```.json``` files in the ```./output``` folder and will not log any errors to the console.
 
 ## API
 

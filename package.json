@@ -1,10 +1,10 @@
 {
   "name": "nexrad-level-3-data",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Parsing of NEXRAD level 3 data files",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node testoutput.js"
   },
   "repository": {
     "type": "git",

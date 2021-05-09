@@ -13,12 +13,10 @@ const parser = (raf) => {
 	const result = {
 		iStartingPoint: raf.readShort(),
 		jStartingPoint: raf.readShort(),
+		text: raf.readString(lengthOfBlock - 4),
 	};
 	// also providethe packet code in hex
 	result.packetCodeHex = packetCode.toString(16);
-
-	// read the result length
-	result.text = raf.readString(lengthOfBlock - 4);
 
 	return result;
 };

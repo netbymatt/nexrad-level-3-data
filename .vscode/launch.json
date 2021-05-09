@@ -15,7 +15,7 @@
 		},
 		{
 			"name": "Test All",
-			"program": "${workspaceFolder}/testall.js",
+			"program": "${workspaceFolder}/testoutput.js",
 			"request": "launch",
 			"skipFiles": [
 				"<node_internals>/**"

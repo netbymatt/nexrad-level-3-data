@@ -96,12 +96,246 @@
     "numberLayers": 1
   },
   "radialPackets": [
-    {
-      "iStartingPoint": -1156,
-      "jStartingPoint": 67,
-      "packetCodeHex": "2",
-      "text": "\" "
-    }
+    [
+      {
+        "iStartingPoint": -1156,
+        "jStartingPoint": 67,
+        "text": "\" ",
+        "packetCodeHex": "2"
+      },
+      {
+        "symbols": [
+          {
+            "iStartingPoint": -1156,
+            "jStartingPoint": 67,
+            "text": "L9"
+          }
+        ],
+        "packetCodeHex": "f"
+      },
+      {
+        "iStartingPoint": 1070,
+        "jStartingPoint": -1259,
+        "text": "\" ",
+        "packetCodeHex": "2"
+      },
+      {
+        "symbols": [
+          {
+            "iStartingPoint": 1070,
+            "jStartingPoint": -1259,
+            "text": "J7"
+          }
+        ],
+        "packetCodeHex": "f"
+      },
+      {
+        "packets": [
+          {
+            "iStartingPoint": 1054,
+            "jStartingPoint": -1264,
+            "text": "! ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": 1041,
+            "jStartingPoint": -1280,
+            "text": "! ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": 1032,
+            "jStartingPoint": -1282,
+            "text": "! ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": 1070,
+            "jStartingPoint": -1259,
+            "vectors": [
+              {
+                "i": 1054,
+                "j": -1264
+              },
+              {
+                "i": 1041,
+                "j": -1280
+              },
+              {
+                "i": 1032,
+                "j": -1282
+              }
+            ],
+            "packetCodeHex": "6"
+          }
+        ],
+        "packetCodeHex": "17"
+      },
+      {
+        "packets": [
+          {
+            "iStartingPoint": 1116,
+            "jStartingPoint": -1227,
+            "text": "# ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": 1162,
+            "jStartingPoint": -1196,
+            "text": "# ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": 1070,
+            "jStartingPoint": -1259,
+            "vectors": [
+              {
+                "i": 1116,
+                "j": -1227
+              },
+              {
+                "i": 1162,
+                "j": -1196
+              }
+            ],
+            "packetCodeHex": "6"
+          }
+        ],
+        "packetCodeHex": "18"
+      },
+      {
+        "iStartingPoint": -1175,
+        "jStartingPoint": -139,
+        "text": "\" ",
+        "packetCodeHex": "2"
+      },
+      {
+        "symbols": [
+          {
+            "iStartingPoint": -1175,
+            "jStartingPoint": -139,
+            "text": "P7"
+          }
+        ],
+        "packetCodeHex": "f"
+      },
+      {
+        "iStartingPoint": -98,
+        "jStartingPoint": -693,
+        "text": "\" ",
+        "packetCodeHex": "2"
+      },
+      {
+        "symbols": [
+          {
+            "iStartingPoint": -98,
+            "jStartingPoint": -693,
+            "text": "H0"
+          }
+        ],
+        "packetCodeHex": "f"
+      },
+      {
+        "iStartingPoint": -6,
+        "jStartingPoint": -636,
+        "text": "\" ",
+        "packetCodeHex": "2"
+      },
+      {
+        "symbols": [
+          {
+            "iStartingPoint": -6,
+            "jStartingPoint": -636,
+            "text": "B1"
+          }
+        ],
+        "packetCodeHex": "f"
+      },
+      {
+        "iStartingPoint": 723,
+        "jStartingPoint": -72,
+        "text": "\" ",
+        "packetCodeHex": "2"
+      },
+      {
+        "symbols": [
+          {
+            "iStartingPoint": 723,
+            "jStartingPoint": -72,
+            "text": "I2"
+          }
+        ],
+        "packetCodeHex": "f"
+      },
+      {
+        "iStartingPoint": -21,
+        "jStartingPoint": -513,
+        "text": "\" ",
+        "packetCodeHex": "2"
+      },
+      {
+        "symbols": [
+          {
+            "iStartingPoint": -21,
+            "jStartingPoint": -513,
+            "text": "M1"
+          }
+        ],
+        "packetCodeHex": "f"
+      },
+      {
+        "packets": [
+          {
+            "iStartingPoint": -56,
+            "jStartingPoint": -536,
+            "text": "! ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": -94,
+            "jStartingPoint": -550,
+            "text": "! ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": -116,
+            "jStartingPoint": -537,
+            "text": "! ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": -134,
+            "jStartingPoint": -534,
+            "text": "! ",
+            "packetCodeHex": "2"
+          },
+          {
+            "iStartingPoint": -21,
+            "jStartingPoint": -513,
+            "vectors": [
+              {
+                "i": -56,
+                "j": -536
+              },
+              {
+                "i": -94,
+                "j": -550
+              },
+              {
+                "i": -116,
+                "j": -537
+              },
+              {
+                "i": -134,
+                "j": -534
+              }
+            ],
+            "packetCodeHex": "6"
+          }
+        ],
+        "packetCodeHex": "17"
+      }
+    ]
   ],
   "graphic": [
     {

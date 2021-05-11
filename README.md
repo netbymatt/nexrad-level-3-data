@@ -106,11 +106,15 @@ I've developed parsing algorithms for that the products that I needed most for m
 |---|---|
 |0x0001|Text and Special Symbol Packets|
 |0x0002|Text and Special Symbol Packets|
+|0x0006|Linked Vector Packet|
 |0x0008|Unlinked Vector Packet|
+|0x000F|Special Graphic Symbol Packet|
 |0x0010|Digital Radial Data Array Packet|
 |0x0013|Special Graphic Symbol Packet|
 |0x0015|Special Graphic Symbol Packet|
 |0x0016|Cell Trend Data Packet|
+|0x0017|Special Graphic Symbol Packet|
+|0x0018|Special Graphic Symbol Packet|
 |0xAF1F|Radial Data Packet (16 Data Levels)|
 
 ## ToDo

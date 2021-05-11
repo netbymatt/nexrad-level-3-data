@@ -15,7 +15,16 @@ const parse = (raf, productDescription, layerCount) => {
 		if (layerLength + raf.getPos() > raf.getLength()) throw new Error(`Layer size overruns block size for layer ${layerIndex}`);
 
 		try {
-			layers.push(parser(raf, productDescription));
+			const packets = [];
+			while (raf.getPos() < startPos + layerLength) {
+				packets.push(parser(raf, productDescription));
+			}
+			// if there's only one packet return it directly, otherwise return the array
+			if (packets.length === 1) {
+				layers.push(packets[0]);
+			} else {
+				layers.push(packets);
+			}
 		} catch (e) {
 			console.error(e.stack);
 			// skip this layer

@@ -14,6 +14,10 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/DTW_NHI_2021_04_08_19_47');
 // const file = fs.readFileSync('./data/TBW_NHI_2021_04_19_19_02');
 
+// 61 NTV
+// const file = fs.readFileSync('./data/sn.0011');
+const file = fs.readFileSync('./data/sn.0012');
+
 // 62 NSS
 // const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
 
@@ -27,7 +31,7 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/LOT_N0H_2021_01_31_11_06_30');
 
 // 172 DTA Storm Total Precipitation
-const file = fs.readFileSync('./data/LOT_DTA_2021_02_28_15_05_33');
+// const file = fs.readFileSync('./data/LOT_DTA_2021_02_28_15_05_33');
 // const file = fs.readFileSync('./data-error/LOT_DTA_2021_05_08_03_47_25');	// has error
 // const file = fs.readFileSync('./data-error/LOT_DAA_2021_05_08_03_40_29');	// different radial packet from standard = 1, no radial data
 

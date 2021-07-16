@@ -30,6 +30,7 @@
     "eslint-plugin-import": "^2.22.1"
   },
   "dependencies": {
+    "js-xdr": "^1.3.0",
     "seek-bzip": "^2.0.0"
   },
   "engines": {

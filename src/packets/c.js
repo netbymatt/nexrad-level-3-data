@@ -1,6 +1,8 @@
 const code = 12;
 const description = 'Tornado Vortex Signautre';
 
+// i and j = -2048 < i,j < 2047
+
 const parser = (raf) => {
 	// packet header
 	const packetCode = raf.readUShort();

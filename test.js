@@ -16,7 +16,7 @@ const parser = require('./src');
 
 // 61 NTV
 // const file = fs.readFileSync('./data/sn.0011');
-const file = fs.readFileSync('./data/sn.0012');
+// const file = fs.readFileSync('./data/sn.0012');
 
 // 62 NSS
 // const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
@@ -34,6 +34,9 @@ const file = fs.readFileSync('./data/sn.0012');
 // const file = fs.readFileSync('./data/LOT_DTA_2021_02_28_15_05_33');
 // const file = fs.readFileSync('./data-error/LOT_DTA_2021_05_08_03_47_25');	// has error
 // const file = fs.readFileSync('./data-error/LOT_DAA_2021_05_08_03_40_29');	// different radial packet from standard = 1, no radial data
+
+// 176 DPR Digital precipitation rate
+const file = fs.readFileSync('./data/LOT_DPR_2021_06_21_06_08_36');
 
 // 177 HHC Hybrid Hydrometeor classification
 // const file = fs.readFileSync('./data/LOT_HHC_2021_01_31_11_06_30');

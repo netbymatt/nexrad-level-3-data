@@ -101,6 +101,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 |165|N0H, N1H, N2H, N3H|Hydrometeor Classification
 |170|DAA|Digital One Hour Accumulation
 |172|DTA|Storm Total Precipitation
+|176|DPR|Digital Precipitation Rate
 |177|HHC|Hybrid Hydrometeor Classification
 ### Supported Packet Types
 |Code|Description|

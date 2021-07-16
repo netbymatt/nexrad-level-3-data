@@ -92,7 +92,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 |ID|Product Code(s)|Description|
 |---|---|---|
 |56|N0S, N1S, N2S, N3S|Storm relative velocity|
-|58|NTP|Storm Tracking Information|
+|58|NST|Storm Tracking Information|
 |59|NHI|Hail Index|
 |61|NTV|Tornadic Vortex Signature|
 |62|NSS|Storm Structure|

@@ -111,6 +111,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 |0x0008|Unlinked Vector Packet|
 |0x000F|Special Graphic Symbol Packet|
 |0x0010|Digital Radial Data Array Packet|
+|0x0012|Tornado Vortex Signature|
 |0x0013|Special Graphic Symbol Packet|
 |0x0015|Special Graphic Symbol Packet|
 |0x0016|Cell Trend Data Packet|

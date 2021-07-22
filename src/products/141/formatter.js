@@ -16,21 +16,46 @@ module.exports = (data) => {
 	pages.forEach((page) => {
 		page.forEach((line) => {
 			// extrat values
-			const rawMatch = line.match(/ {8}([A-Z]\d) {4} *([0-9.]{1,3}) *([0-9.]{1,3}) *<?>?([0-9.]{4,6}) */);
+			const rawMatch = line.match(/ +([0-9.]+) +([0-9.]+)\/ *([0-9.]+) +([0-9.]+) +([A-Z0-9]{2}) +([0-9.]+) +([0-9.]+)[ <]+([0-9.]+)[ <>]+([0-9.]+)[ <>]+([0-9.]+)[ <>]+([0-9.]+)[ <>]+([0-9.]+) +([YN]) {1,4}([0-9.]*)\/* {0,3}([0-9.]*) +([0-9.]*)/);
 			if (!rawMatch) return;
 
 			// format the result
-			const [, id, probSevere, probHail, maxSize] = [...rawMatch];
+			const [, id, az, ran, sr, stmId, llRv, llDv, llBase, depthKft, depthStmrel, maxRvKft, maxrvKts, tvs, motionDeg, motionKts, msi] = [...rawMatch];
+			// check for motion
+			let motion = false;
+			if (motionDeg !== '') {
+				motion = {
+					deg: +motionDeg,
+					kts: +motionKts,
+				};
+			}
 			// store to array
 			result[id] = {
-				probSevere: +probSevere,
-				probHail: +probHail,
-				maxSize: +maxSize,
+				az: +az,
+				ran: +ran,
+				sr: +sr,
+				stmId,
+				lowLevel: {
+					rv: +llRv,
+					dv: +llDv,
+					base: +llBase,
+				},
+				depth: {
+					kft: +depthKft,
+					stmrel: +depthStmrel,
+				},
+				maxRv: {
+					kft: +maxRvKft,
+					kts: +maxrvKts,
+				},
+				tvs: tvs === 'Y',
+				motion,
+				msi: msi ?? null,
 			};
 		});
 	});
 
 	return {
-		hail: result,
+		mesocyclone: result,
 	};
 };

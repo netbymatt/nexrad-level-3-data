@@ -16,7 +16,7 @@ const parser = require('./src');
 
 // 61 NTV
 // const file = fs.readFileSync('./data/sn.0011');
-const file = fs.readFileSync('./data/sn.0012');
+// const file = fs.readFileSync('./data/sn.0012');
 
 // 62 NSS
 // const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
@@ -26,6 +26,9 @@ const file = fs.readFileSync('./data/sn.0012');
 
 // 80 NTP Storm total accumulation
 // const file = fs.readFileSync('./data/LOT_NTP_2021_01_31_11_06_30');
+
+// 141 NMD Mesocyclone
+const file = fs.readFileSync('./data/LOT_NMD_2021_06_21_04_22_17');
 
 // 165 N0H Hydrometeor classification
 // const file = fs.readFileSync('./data/LOT_N0H_2021_01_31_11_06_30');

@@ -96,6 +96,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 |59|NHI|Hail Index|
 |61|NTV|Tornadic Vortex Signature|
 |62|NSS|Storm Structure|
+|74|RCM|Radar Coded Message|
 |78|N1P|One-hour precipitation|
 |80|NTP|Storm Total Rainfall Accumulation|
 |141|NMD|Mesocyclone|

@@ -21,6 +21,9 @@ const parser = require('./src');
 // 62 NSS
 // const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
 
+// 74 RCM Radar coded message
+const file = fs.readFileSync('./data/LOT_RCM_2021_07_26_14_23_00');
+
 // 78 One-hour precipitation
 // const file = fs.readFileSync('./data/LOT_N1P_2021_01_31_11_06_30');
 
@@ -28,7 +31,7 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/LOT_NTP_2021_01_31_11_06_30');
 
 // 141 NMD Mesocyclone
-const file = fs.readFileSync('./data/LOT_NMD_2021_06_21_04_22_17');
+// const file = fs.readFileSync('./data/LOT_NMD_2021_06_21_04_22_17');
 
 // 165 N0H Hydrometeor classification
 // const file = fs.readFileSync('./data/LOT_N0H_2021_01_31_11_06_30');

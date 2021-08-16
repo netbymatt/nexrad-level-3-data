@@ -34,8 +34,17 @@ const parser = (raf, productDescription) => {
 		start = 1;
 		scaled[0] = null;
 	}
-	for (let i = start; i <= productDescription.plot.maxDataValue; i += 1) {
-		scaled.push(((i - scaling.offset) / scaling.scale));
+	if (productDescription?.plot?.maxDataValue !== undefined) {
+		for (let i = start; i <= productDescription.plot.maxDataValue; i += 1) {
+			scaled.push(((i - scaling.offset) / scaling.scale));
+		}
+	} else if (productDescription?.plot?.dataLevels !== undefined) {
+		// below threshold and missing are null
+		scaled[0] = null;
+		scaled[1] = null;
+		for (let i = 2; i <= productDescription.plot.dataLevels; i += 1) {
+			scaled[i] = productDescription.plot.minimumDataValue + (i * productDescription.plot.dataIncrement);
+		}
 	}
 
 	// loop through the radials and bins

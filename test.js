@@ -27,8 +27,11 @@ const parser = require('./src');
 // 80 NTP Storm total accumulation
 // const file = fs.readFileSync('./data/LOT_NTP_2021_01_31_11_06_30');
 
+// 94 NXQ Digital Base Reflectivy
+const file = fs.readFileSync('./data/SDUS53 KLOT 150709');
+
 // 141 NMD Mesocyclone
-const file = fs.readFileSync('./data/LOT_NMD_2021_06_21_04_22_17');
+// const file = fs.readFileSync('./data/LOT_NMD_2021_06_21_04_22_17');
 
 // 165 N0H Hydrometeor classification
 // const file = fs.readFileSync('./data/LOT_N0H_2021_01_31_11_06_30');

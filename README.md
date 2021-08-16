@@ -98,6 +98,7 @@ I've developed parsing algorithms for that the products that I needed most for m
 |62|NSS|Storm Structure|
 |78|N1P|One-hour precipitation|
 |80|NTP|Storm Total Rainfall Accumulation|
+|94|NXQ, ...|Digital Base Reflectivity|
 |141|NMD|Mesocyclone|
 |165|N0H, N1H, N2H, N3H|Hydrometeor Classification
 |170|DAA|Digital One Hour Accumulation

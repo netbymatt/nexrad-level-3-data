@@ -2,7 +2,7 @@ const code = 23;
 const description = 'Special Graphic Symbol Packet';
 
 const parser = (raf) => {
-	// muse require dynamically to avoid circular dependency when not yet fully executed
+	// must require dynamically to avoid circular dependency when not yet fully executed
 	// eslint-disable-next-line global-require
 	const { parser: packetParser } = require('.');
 	// packet header

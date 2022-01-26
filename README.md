@@ -119,6 +119,8 @@ I've developed parsing algorithms for that the products that I needed most for m
 |0x0016|Cell Trend Data Packet|
 |0x0017|Special Graphic Symbol Packet|
 |0x0018|Special Graphic Symbol Packet|
+|0x0019|Special Graphic Symbol Packet|
+|0x0020|Special Graphic Symbol Packet|
 |0xAF1F|Radial Data Packet (16 Data Levels)|
 
 ## Possible Issues

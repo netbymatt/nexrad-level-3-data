@@ -9,7 +9,8 @@ const parser = require('./src');
 
 // 58 NTP Storm Tracking Information
 // const file = fs.readFileSync('./data/JAX_NST_2021_04_11_19_37_00');
-// const file = fs.readFileSync('./data/TBW_NST_2021_04_19_19_02');
+const file = fs.readFileSync('./data/TBW_NST_2021_04_19_19_02');
+// const file = fs.readFileSync('./data-error/KDGX_NST_2022_01_16_09_31');	// error packet id 0x0019
 
 // 59 NHI Hail Index
 // const file = fs.readFileSync('./data/DTW_NHI_2021_04_08_19_47');
@@ -20,7 +21,7 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/sn.0012');
 
 // 62 NSS
-const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
+// const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
 // const file = fs.readFileSync('./data-error/KBYX_NSS_2022_01_16_09_31');	// error with block id 4
 // const file = fs.readFileSync('./data-error/KCAE_NSS_2022_01_16_09_31');	// error with block id 5
 // const file = fs.readFileSync('./data-error/KFFC_NSS_2022_01_16_09_31');	// error with block id 7

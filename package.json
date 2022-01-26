@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/netbymatt/nexrad-level-3-data#readme",
   "devDependencies": {
-    "eslint": "^7.20.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.22.1"
   },
   "dependencies": {

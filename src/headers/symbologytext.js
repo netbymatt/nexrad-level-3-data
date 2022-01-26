@@ -4,7 +4,7 @@ const parse = (raf) => {
 	const pages = [];
 	let lines = [];
 
-	// loop until a -1 is encounted
+	// loop until a -1 is encountered
 	let length = raf.readShort();
 	do {
 		while (length !== -1) {
@@ -13,7 +13,12 @@ const parse = (raf) => {
 		}
 		pages.push(lines);
 		lines = [];
-		length = raf.readShort();
+		// catch the end of file
+		if (raf.getPos() < raf.getLength()) {
+			length = raf.readShort();
+		} else {
+			length = -1;
+		}
 	} while (length === 80);
 
 	// roll back the 4 bytes used to detect the end of the text area

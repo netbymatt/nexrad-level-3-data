@@ -10,13 +10,14 @@
 		},
 		"files.eol": "\n",
 		"cSpell.words": [
-			"SDUS",
 			"bzip",
 			"ddhhmm",
 			"mesocyclone",
 			"mrle",
 			"mseconds",
-			"rrrrvvvv"
+			"rrrrvvvv",
+			"SDUS",
+			"Symbologies"
 		],
 		"cSpell.ignorePaths": [
 			"**/package-lock.json",

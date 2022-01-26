@@ -1,4 +1,5 @@
 const fs = require('fs');
+const util = require('util');
 const parser = require('./src');
 
 // read file
@@ -19,7 +20,11 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/sn.0012');
 
 // 62 NSS
-// const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
+const file = fs.readFileSync('./data/TBW_NSS_2021_04_19_19_02');
+// const file = fs.readFileSync('./data-error/KBYX_NSS_2022_01_16_09_31');	// error with block id 4
+// const file = fs.readFileSync('./data-error/KCAE_NSS_2022_01_16_09_31');	// error with block id 5
+// const file = fs.readFileSync('./data-error/KFFC_NSS_2022_01_16_09_31');	// error with block id 7
+// const file = fs.readFileSync('./data-error/KLOT_NSS_2022_01_16_09_31');	// error with block id 3
 
 // 78 One-hour precipitation
 // const file = fs.readFileSync('./data/LOT_N1P_2021_01_31_11_06_30');
@@ -28,7 +33,7 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/LOT_NTP_2021_01_31_11_06_30');
 
 // 94 NXQ Digital Base Reflectivy
-const file = fs.readFileSync('./data/SDUS53 KLOT 150709');
+// const file = fs.readFileSync('./data/SDUS53 KLOT 150709');
 
 // 141 NMD Mesocyclone
 // const file = fs.readFileSync('./data/LOT_NMD_2021_06_21_04_22_17');
@@ -47,5 +52,6 @@ const file = fs.readFileSync('./data/SDUS53 KLOT 150709');
 // pass to parser as a string or buffer
 const level3Data = parser(file);
 
+// console.log(util.inspect(level3Data, true, 10));
 console.log(level3Data);
 console.log();

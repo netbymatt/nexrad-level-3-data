@@ -1,10 +1,12 @@
-const symbology6 = require('./symbology6');
+const symbologyText = require('./symbologytext');
+// some block ids just have text, this is not well documented so we do our best to parse these
+const textSymbologies = [3, 4, 5, 6, 7];
 
 const parse = (raf) => {
 	const blockDivider = raf.readShort();
 	const blockId = raf.readShort();
 	// block id 6 is undocumented but appears to be text
-	if (blockId === 6) return symbology6(raf);
+	if (textSymbologies.includes(blockId)) return symbologyText(raf);
 	const blockLength = raf.readInt();
 
 	// test some known values

@@ -121,6 +121,10 @@ I've developed parsing algorithms for that the products that I needed most for m
 |0x0018|Special Graphic Symbol Packet|
 |0xAF1F|Radial Data Packet (16 Data Levels)|
 
+## Possible Issues
+- In production it has been found that some NSS data includes symbology IDs other than 1 which is the only one that appears in the documentation. I've examined these other responses and have found these to be structured text. This text is returned as symbology.pages, but is technically undocumented per the specification above.
+- In production NSS data that is truncated has been found. Other cases of truncated data may also exist. The parser is designed to catch these errors, log them to the console and they do any additional processing that may be necessary. The recommended practice is to test that your desired data structure exists in the returned object before doing any further processing with it.
+
 ## ToDo
 * Add support for additional radial products
 * Add support for raster products

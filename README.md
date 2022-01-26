@@ -65,7 +65,7 @@ parser(file, {
 ```
 
 ### file
-File can be a buffer or string containing the data from one of the [Available Products]
+File can be a buffer or string containing the data from one of the [available products](#available-products).
 
 ### options.logger
 By default all messages are logged to the console. Messages can be surpressed by passing ``false``. A custom logger such as winston or pino can be provided. Any logger provided must provide the ``log()`` and ``error()`` functions.

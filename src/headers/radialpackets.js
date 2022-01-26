@@ -2,7 +2,7 @@
 
 const { parser } = require('../packets');
 
-const parse = (raf, productDescription, layerCount) => {
+const parse = (raf, productDescription, layerCount, options) => {
 	const layers = [];
 	for (let layerIndex = 0; layerIndex < layerCount; layerIndex += 1) {
 		// store starting so skipping the block is possible if layer can't be parsed
@@ -26,7 +26,7 @@ const parse = (raf, productDescription, layerCount) => {
 				layers.push(packets);
 			}
 		} catch (e) {
-			console.error(e.stack);
+			options.logger.error(e.stack);
 			// skip this layer
 			raf.seek(startPos + layerLength);
 			layers.push(undefined);

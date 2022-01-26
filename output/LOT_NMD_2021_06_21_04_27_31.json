@@ -1,0 +1,1968 @@
+{
+  "textHeader": {
+    "fileType": "SDUS33",
+    "id": "KLOT",
+    "ddhhmm": "210427",
+    "type": "NMD",
+    "id3": "LOT"
+  },
+  "messageHeader": {
+    "code": 141,
+    "julianDate": 18800,
+    "seconds": 16364,
+    "length": 10414,
+    "source": 337,
+    "dest": 0,
+    "blocks": 5
+  },
+  "productDescription": {
+    "abbreviation": [
+      "NMD"
+    ],
+    "description": "Mesocyclone",
+    "latitude": 41.604,
+    "longitude": -88.085,
+    "height": 760,
+    "code": 141,
+    "mode": 2,
+    "vcp": 212,
+    "sequenceNumber": 6238,
+    "volumeScanNumber": 19,
+    "volumeScanDate": 18800,
+    "volumeScanTime": 16051,
+    "productDate": 18800,
+    "productTime": 16364,
+    "minimumReflectivity": 0,
+    "overlapDisplayFilter": 1,
+    "elevationNumber": 0,
+    "filterStrengthRank": 5,
+    "version": 1,
+    "spotBlank": 0,
+    "offsetSymbology": 60,
+    "offsetGraphic": 1143,
+    "offsetTabular": 2882
+  },
+  "symbology": {
+    "numberLayers": 1
+  },
+  "radialPackets": [
+    {
+      "points": [
+        {
+          "iStartingPoint": 671,
+          "jStartingPoint": 479,
+          "pointFeatureType": 9,
+          "pointFeatureAttribute": 2.75
+        }
+      ],
+      "packetCodeHex": "14"
+    }
+  ],
+  "graphic": [
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " CIR STMID 786    E3 759    O3 268    U6 461    U6 754    W4 799    M4          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " SR   LLRV   9    43   9    38   8    38   8    20   8    39   7    46          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " AZ    RAN 054   111 235    98 243    98 248    84 252    95 053   106          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " HGT  MXRV  19    60  16    58  16    43  13    44  15    39  18    50          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " BASE DPTH <14   >22 <11   >19 <12   >20 < 9   >17  15    14 <13   >16          "
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 494,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 494,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 494,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 494,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 74,
+            "j": 0
+          },
+          "end": {
+            "i": 74,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 144,
+            "j": 0
+          },
+          "end": {
+            "i": 144,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 214,
+            "j": 0
+          },
+          "end": {
+            "i": 214,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 284,
+            "j": 0
+          },
+          "end": {
+            "i": 284,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 354,
+            "j": 0
+          },
+          "end": {
+            "i": 354,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 424,
+            "j": 0
+          },
+          "end": {
+            "i": 424,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 494,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " CIR STMID 350    U6 800    M4 284    W4 545    M4 323    I5 811    X2          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " SR   LLRV   7    25   7    34   7    40   7    32   6    29   6    26          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " AZ    RAN 240    86 054    92 246    98 059   101 040    91 075    89          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " HGT  MXRV  13    46  14    37  20    43  16    32  14    73  17    55          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " BASE DPTH < 9   >16 <10   >17  16    15  16    15 <10   >17 <10   >17          "
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 494,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 494,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 494,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 494,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 74,
+            "j": 0
+          },
+          "end": {
+            "i": 74,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 144,
+            "j": 0
+          },
+          "end": {
+            "i": 144,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 214,
+            "j": 0
+          },
+          "end": {
+            "i": 214,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 284,
+            "j": 0
+          },
+          "end": {
+            "i": 284,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 354,
+            "j": 0
+          },
+          "end": {
+            "i": 354,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 424,
+            "j": 0
+          },
+          "end": {
+            "i": 424,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 494,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " CIR STMID 360    U6 548    U4 684    W4 813    M4 814    O3 563    T4          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " SR   LLRV   6    35   6    48   6    17   6    44   5    66   5    44          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " AZ    RAN 247    84 049    75 250   100 059    95 233    91 055    32          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " HGT  MXRV  16    39  11    48  16    31  11    44  10    66   2    44          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " BASE DPTH  13    13  11    12 <12   >15 <11   >14 <10   >18 < 2   >15          "
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 494,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 494,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 494,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 494,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 74,
+            "j": 0
+          },
+          "end": {
+            "i": 74,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 144,
+            "j": 0
+          },
+          "end": {
+            "i": 144,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 214,
+            "j": 0
+          },
+          "end": {
+            "i": 214,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 284,
+            "j": 0
+          },
+          "end": {
+            "i": 284,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 354,
+            "j": 0
+          },
+          "end": {
+            "i": 354,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 424,
+            "j": 0
+          },
+          "end": {
+            "i": 424,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 494,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " CIR STMID 265    T4 755    A0 420    I5 442    W4 879    I4 818    C9          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " SR   LLRV   5L   37   5    49   5    27   5    26   5L   31   5    36          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " AZ    RAN 055    30 254    76 037    93 249    86 057    18 072    79          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " HGT  MXRV   2    37   8    49  17    37  18    34   4    38  12    36          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " BASE DPTH < 2   > 6 < 8   >15 <11   >17 < 9   >17   3    13  12    12          "
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 494,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 494,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 494,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 494,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 74,
+            "j": 0
+          },
+          "end": {
+            "i": 74,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 144,
+            "j": 0
+          },
+          "end": {
+            "i": 144,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 214,
+            "j": 0
+          },
+          "end": {
+            "i": 214,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 284,
+            "j": 0
+          },
+          "end": {
+            "i": 284,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 354,
+            "j": 0
+          },
+          "end": {
+            "i": 354,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 424,
+            "j": 0
+          },
+          "end": {
+            "i": 424,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 494,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " CIR STMID 819    H3 820    D4 824    W4 826    D4 827    M4 829    M4          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " SR   LLRV   5    29   5    39   5    31   5    32   5    25   5    23          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " AZ    RAN 067    82 070    88 255    98 065    85 050    98 050    99          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " HGT  MXRV  16    34  10    39  12    31  13    32  19    38  17    30          "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " BASE DPTH  12    13 <10   >18 <12   >15  13    13 <12   >18 <12   >16          "
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 494,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 494,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 494,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 494,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 74,
+            "j": 0
+          },
+          "end": {
+            "i": 74,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 144,
+            "j": 0
+          },
+          "end": {
+            "i": 144,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 214,
+            "j": 0
+          },
+          "end": {
+            "i": 214,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 284,
+            "j": 0
+          },
+          "end": {
+            "i": 284,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 354,
+            "j": 0
+          },
+          "end": {
+            "i": 354,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 424,
+            "j": 0
+          },
+          "end": {
+            "i": 424,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 494,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 1,
+      "packetCodeHex": "8",
+      "text": " CIR STMID 465    X2                                                            "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 11,
+      "packetCodeHex": "8",
+      "text": " SR   LLRV   5    29                                                            "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 21,
+      "packetCodeHex": "8",
+      "text": " AZ    RAN 075    93                                                            "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 31,
+      "packetCodeHex": "8",
+      "text": " HGT  MXRV  11    29                                                            "
+    },
+    {
+      "color": 0,
+      "iStartingPoint": 0,
+      "jStartingPoint": 41,
+      "packetCodeHex": "8",
+      "text": " BASE DPTH <11   >14                                                            "
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 0
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 10
+          },
+          "end": {
+            "i": 494,
+            "j": 10
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 20
+          },
+          "end": {
+            "i": 494,
+            "j": 20
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 30
+          },
+          "end": {
+            "i": 494,
+            "j": 30
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 40
+          },
+          "end": {
+            "i": 494,
+            "j": 40
+          }
+        },
+        {
+          "start": {
+            "i": 4,
+            "j": 50
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    },
+    {
+      "color": 3,
+      "vectors": [
+        {
+          "start": {
+            "i": 4,
+            "j": 0
+          },
+          "end": {
+            "i": 4,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 74,
+            "j": 0
+          },
+          "end": {
+            "i": 74,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 144,
+            "j": 0
+          },
+          "end": {
+            "i": 144,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 214,
+            "j": 0
+          },
+          "end": {
+            "i": 214,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 284,
+            "j": 0
+          },
+          "end": {
+            "i": 284,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 354,
+            "j": 0
+          },
+          "end": {
+            "i": 354,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 424,
+            "j": 0
+          },
+          "end": {
+            "i": 424,
+            "j": 50
+          }
+        },
+        {
+          "start": {
+            "i": 494,
+            "j": 0
+          },
+          "end": {
+            "i": 494,
+            "j": 50
+          }
+        }
+      ],
+      "packetCodeHex": "a"
+    }
+  ],
+  "tabular": {
+    "messageHeader": {
+      "code": 141,
+      "julianDate": 0,
+      "seconds": 0,
+      "length": 4770,
+      "source": 337,
+      "dest": 0,
+      "blocks": 3
+    },
+    "productDescription": {
+      "abbreviation": [
+        "NMD"
+      ],
+      "description": "Mesocyclone",
+      "latitude": 41.604,
+      "longitude": -88.085,
+      "height": 760,
+      "code": 141,
+      "mode": 2,
+      "vcp": 212,
+      "sequenceNumber": 0,
+      "volumeScanNumber": 19,
+      "volumeScanDate": 18800,
+      "volumeScanTime": 16051,
+      "productDate": 18800,
+      "productTime": 16364,
+      "minimumReflectivity": 0,
+      "overlapDisplayFilter": 0,
+      "elevationNumber": 0,
+      "filterStrengthRank": 0,
+      "version": 0,
+      "spotBlank": 0,
+      "offsetSymbology": 60,
+      "offsetGraphic": 0,
+      "offsetTabular": 0
+    },
+    "totalPages": 4,
+    "charactersPerLine": 80,
+    "pages": [
+      [
+        "                        MESOCYCLONE DETECTION ALGORITHM                         ",
+        "     RADAR ID: 337     DATE: 06/21/2021   TIME: 04:27:31   Avg dir/spd: 276/ 26 ",
+        "                                                                                ",
+        " CIRC  AZRAN   SR STM |-LOW LEVEL-|  |--DEPTH--|  |-MAX RV-| TVS  MOTION   MSI  ",
+        "  ID   deg/nm     ID  RV   DV  BASE  kft STMREL%  kft    kts     deg/kts        ",
+        "                                                                                ",
+        " 786  054/111  9  E3  43   57  <14   >22  100      19     60  N           5786  ",
+        " 759  235/ 98  9  O3  38   48  <11   >19  100      16     58  N  033/ 39  4421  ",
+        " 268  243/ 98  8  U6  38   55  <12   >20  100      16     43  N           4538  ",
+        " 461  248/ 84  8  U6  20   26  < 9   >17   97      13     44  N  256/ 57  4459  ",
+        " 754  252/ 95  8  W4  39   56   15    14   80      15     39  N  230/ 26  3235  ",
+        " 799  053/106  7  M4  46   46  <13   >16   90      18     50  N           4578  ",
+        " 350  240/ 86  7  U6  25   33  < 9   >16   94      13     46  N  201/ 50  4220  ",
+        " 800  054/ 92  7  M4  34   54  <10   >17  100      14     37  N           4188  ",
+        " 284  246/ 98  7  W4  40   50   16    15   86      20     43  N           3809  ",
+        " 545  059/101  7  M4  32   62   16    15   88      16     32  N           2463  "
+      ],
+      [
+        "                        MESOCYCLONE DETECTION ALGORITHM                         ",
+        "     RADAR ID: 337     DATE: 06/21/2021   TIME: 04:27:31   Avg dir/spd: 276/ 26 ",
+        "                                                                                ",
+        " CIRC  AZRAN   SR STM |-LOW LEVEL-|  |--DEPTH--|  |-MAX RV-| TVS  MOTION   MSI  ",
+        "  ID   deg/nm     ID  RV   DV  BASE  kft STMREL%  kft    kts     deg/kts        ",
+        "                                                                                ",
+        " 323  040/ 91  6  I5  29   59  <10   >17   95      14     73  N  220/ 27  5152  ",
+        " 811  075/ 89  6  X2  26   52  <10   >17   97      17     55  N           3740  ",
+        " 360  247/ 84  6  U6  35   45   13    13   73      16     39  N  242/ 49  3626  ",
+        " 548  049/ 75  6  U4  48   47   11    12   66      11     48  N           3517  ",
+        " 684  250/100  6  W4  17   29  <12   >15   84      16     31  N  303/ 26  2473  ",
+        " 813  059/ 95  6  M4  44   43  <11   >14   82      11     44  N           2341  ",
+        " 814  233/ 91  5  O3  66   82  <10   >18  100      10     66  N           4958  ",
+        " 563  055/ 32  5  T4  44   26  < 2   >15   88       2     44  N  276/ 43  4138  ",
+        " 265  055/ 30  5L T4  37   27  < 2   > 6   30       2     37  N  322/ 32  3980  ",
+        " 755  254/ 76  5  A0  49   50  < 8   >15   86       8     49  N  233/ 34  3714  "
+      ],
+      [
+        "                        MESOCYCLONE DETECTION ALGORITHM                         ",
+        "     RADAR ID: 337     DATE: 06/21/2021   TIME: 04:27:31   Avg dir/spd: 276/ 26 ",
+        "                                                                                ",
+        " CIRC  AZRAN   SR STM |-LOW LEVEL-|  |--DEPTH--|  |-MAX RV-| TVS  MOTION   MSI  ",
+        "  ID   deg/nm     ID  RV   DV  BASE  kft STMREL%  kft    kts     deg/kts        ",
+        "                                                                                ",
+        " 420  037/ 93  5  I5  27   44  <11   >17   96      17     37  N  284/ 49  3314  ",
+        " 442  249/ 86  5  W4  26   41  < 9   >17  100      18     34  N  315/ 22  3163  ",
+        " 879  057/ 18  5L I4  31   16  < 3   >13   26       4     38  N  269/ 47  3155  ",
+        " 818  072/ 79  5  C9  36   49   12    12   70      12     36  N           3135  ",
+        " 819  067/ 82  5  H3  29   44   12    13   73      16     34  N           3136  ",
+        " 820  070/ 88  5  D4  39   47  <10   >18  100      10     39  N           2970  ",
+        " 824  255/ 98  5  W4  31   45  <12   >15   85      12     31  N           2801  ",
+        " 826  065/ 85  5  D4  32   49   13    13   74      13     32  N           2742  ",
+        " 827  050/ 98  5  M4  25   37  <12   >18  100      19     38  N           2600  ",
+        " 829  050/ 99  5  M4  23   49  <12   >16   89      17     30  N           2541  "
+      ],
+      [
+        "                        MESOCYCLONE DETECTION ALGORITHM                         ",
+        "     RADAR ID: 337     DATE: 06/21/2021   TIME: 04:27:31   Avg dir/spd: 276/ 26 ",
+        "                                                                                ",
+        " CIRC  AZRAN   SR STM |-LOW LEVEL-|  |--DEPTH--|  |-MAX RV-| TVS  MOTION   MSI  ",
+        "  ID   deg/nm     ID  RV   DV  BASE  kft STMREL%  kft    kts     deg/kts        ",
+        "                                                                                ",
+        " 465  075/ 93  5  X2  29   41  <11   >14   78      11     29  N  285/ 63  2066  "
+      ]
+    ]
+  },
+  "formatted": {
+    "mesocyclone": {
+      "268": {
+        "az": 243,
+        "ran": 98,
+        "sr": 8,
+        "stmId": "U6",
+        "lowLevel": {
+          "rv": 38,
+          "dv": 55,
+          "base": 12
+        },
+        "depth": {
+          "kft": 20,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 16,
+          "kts": 43
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "4538"
+      },
+      "284": {
+        "az": 246,
+        "ran": 98,
+        "sr": 7,
+        "stmId": "W4",
+        "lowLevel": {
+          "rv": 40,
+          "dv": 50,
+          "base": 16
+        },
+        "depth": {
+          "kft": 15,
+          "stmrel": 86
+        },
+        "maxRv": {
+          "kft": 20,
+          "kts": 43
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "3809"
+      },
+      "323": {
+        "az": 40,
+        "ran": 91,
+        "sr": 6,
+        "stmId": "I5",
+        "lowLevel": {
+          "rv": 29,
+          "dv": 59,
+          "base": 10
+        },
+        "depth": {
+          "kft": 17,
+          "stmrel": 95
+        },
+        "maxRv": {
+          "kft": 14,
+          "kts": 73
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 220,
+          "kts": 27
+        },
+        "msi": "5152"
+      },
+      "350": {
+        "az": 240,
+        "ran": 86,
+        "sr": 7,
+        "stmId": "U6",
+        "lowLevel": {
+          "rv": 25,
+          "dv": 33,
+          "base": 9
+        },
+        "depth": {
+          "kft": 16,
+          "stmrel": 94
+        },
+        "maxRv": {
+          "kft": 13,
+          "kts": 46
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 201,
+          "kts": 50
+        },
+        "msi": "4220"
+      },
+      "360": {
+        "az": 247,
+        "ran": 84,
+        "sr": 6,
+        "stmId": "U6",
+        "lowLevel": {
+          "rv": 35,
+          "dv": 45,
+          "base": 13
+        },
+        "depth": {
+          "kft": 13,
+          "stmrel": 73
+        },
+        "maxRv": {
+          "kft": 16,
+          "kts": 39
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 242,
+          "kts": 49
+        },
+        "msi": "3626"
+      },
+      "420": {
+        "az": 37,
+        "ran": 93,
+        "sr": 5,
+        "stmId": "I5",
+        "lowLevel": {
+          "rv": 27,
+          "dv": 44,
+          "base": 11
+        },
+        "depth": {
+          "kft": 17,
+          "stmrel": 96
+        },
+        "maxRv": {
+          "kft": 17,
+          "kts": 37
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 284,
+          "kts": 49
+        },
+        "msi": "3314"
+      },
+      "442": {
+        "az": 249,
+        "ran": 86,
+        "sr": 5,
+        "stmId": "W4",
+        "lowLevel": {
+          "rv": 26,
+          "dv": 41,
+          "base": 9
+        },
+        "depth": {
+          "kft": 17,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 18,
+          "kts": 34
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 315,
+          "kts": 22
+        },
+        "msi": "3163"
+      },
+      "461": {
+        "az": 248,
+        "ran": 84,
+        "sr": 8,
+        "stmId": "U6",
+        "lowLevel": {
+          "rv": 20,
+          "dv": 26,
+          "base": 9
+        },
+        "depth": {
+          "kft": 17,
+          "stmrel": 97
+        },
+        "maxRv": {
+          "kft": 13,
+          "kts": 44
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 256,
+          "kts": 57
+        },
+        "msi": "4459"
+      },
+      "465": {
+        "az": 75,
+        "ran": 93,
+        "sr": 5,
+        "stmId": "X2",
+        "lowLevel": {
+          "rv": 29,
+          "dv": 41,
+          "base": 11
+        },
+        "depth": {
+          "kft": 14,
+          "stmrel": 78
+        },
+        "maxRv": {
+          "kft": 11,
+          "kts": 29
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 285,
+          "kts": 63
+        },
+        "msi": "2066"
+      },
+      "545": {
+        "az": 59,
+        "ran": 101,
+        "sr": 7,
+        "stmId": "M4",
+        "lowLevel": {
+          "rv": 32,
+          "dv": 62,
+          "base": 16
+        },
+        "depth": {
+          "kft": 15,
+          "stmrel": 88
+        },
+        "maxRv": {
+          "kft": 16,
+          "kts": 32
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "2463"
+      },
+      "548": {
+        "az": 49,
+        "ran": 75,
+        "sr": 6,
+        "stmId": "U4",
+        "lowLevel": {
+          "rv": 48,
+          "dv": 47,
+          "base": 11
+        },
+        "depth": {
+          "kft": 12,
+          "stmrel": 66
+        },
+        "maxRv": {
+          "kft": 11,
+          "kts": 48
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "3517"
+      },
+      "563": {
+        "az": 55,
+        "ran": 32,
+        "sr": 5,
+        "stmId": "T4",
+        "lowLevel": {
+          "rv": 44,
+          "dv": 26,
+          "base": 2
+        },
+        "depth": {
+          "kft": 15,
+          "stmrel": 88
+        },
+        "maxRv": {
+          "kft": 2,
+          "kts": 44
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 276,
+          "kts": 43
+        },
+        "msi": "4138"
+      },
+      "684": {
+        "az": 250,
+        "ran": 100,
+        "sr": 6,
+        "stmId": "W4",
+        "lowLevel": {
+          "rv": 17,
+          "dv": 29,
+          "base": 12
+        },
+        "depth": {
+          "kft": 15,
+          "stmrel": 84
+        },
+        "maxRv": {
+          "kft": 16,
+          "kts": 31
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 303,
+          "kts": 26
+        },
+        "msi": "2473"
+      },
+      "754": {
+        "az": 252,
+        "ran": 95,
+        "sr": 8,
+        "stmId": "W4",
+        "lowLevel": {
+          "rv": 39,
+          "dv": 56,
+          "base": 15
+        },
+        "depth": {
+          "kft": 14,
+          "stmrel": 80
+        },
+        "maxRv": {
+          "kft": 15,
+          "kts": 39
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 230,
+          "kts": 26
+        },
+        "msi": "3235"
+      },
+      "755": {
+        "az": 254,
+        "ran": 76,
+        "sr": 5,
+        "stmId": "A0",
+        "lowLevel": {
+          "rv": 49,
+          "dv": 50,
+          "base": 8
+        },
+        "depth": {
+          "kft": 15,
+          "stmrel": 86
+        },
+        "maxRv": {
+          "kft": 8,
+          "kts": 49
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 233,
+          "kts": 34
+        },
+        "msi": "3714"
+      },
+      "759": {
+        "az": 235,
+        "ran": 98,
+        "sr": 9,
+        "stmId": "O3",
+        "lowLevel": {
+          "rv": 38,
+          "dv": 48,
+          "base": 11
+        },
+        "depth": {
+          "kft": 19,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 16,
+          "kts": 58
+        },
+        "tvs": false,
+        "motion": {
+          "deg": 33,
+          "kts": 39
+        },
+        "msi": "4421"
+      },
+      "786": {
+        "az": 54,
+        "ran": 111,
+        "sr": 9,
+        "stmId": "E3",
+        "lowLevel": {
+          "rv": 43,
+          "dv": 57,
+          "base": 14
+        },
+        "depth": {
+          "kft": 22,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 19,
+          "kts": 60
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "5786"
+      },
+      "799": {
+        "az": 53,
+        "ran": 106,
+        "sr": 7,
+        "stmId": "M4",
+        "lowLevel": {
+          "rv": 46,
+          "dv": 46,
+          "base": 13
+        },
+        "depth": {
+          "kft": 16,
+          "stmrel": 90
+        },
+        "maxRv": {
+          "kft": 18,
+          "kts": 50
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "4578"
+      },
+      "800": {
+        "az": 54,
+        "ran": 92,
+        "sr": 7,
+        "stmId": "M4",
+        "lowLevel": {
+          "rv": 34,
+          "dv": 54,
+          "base": 10
+        },
+        "depth": {
+          "kft": 17,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 14,
+          "kts": 37
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "4188"
+      },
+      "811": {
+        "az": 75,
+        "ran": 89,
+        "sr": 6,
+        "stmId": "X2",
+        "lowLevel": {
+          "rv": 26,
+          "dv": 52,
+          "base": 10
+        },
+        "depth": {
+          "kft": 17,
+          "stmrel": 97
+        },
+        "maxRv": {
+          "kft": 17,
+          "kts": 55
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "3740"
+      },
+      "813": {
+        "az": 59,
+        "ran": 95,
+        "sr": 6,
+        "stmId": "M4",
+        "lowLevel": {
+          "rv": 44,
+          "dv": 43,
+          "base": 11
+        },
+        "depth": {
+          "kft": 14,
+          "stmrel": 82
+        },
+        "maxRv": {
+          "kft": 11,
+          "kts": 44
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "2341"
+      },
+      "814": {
+        "az": 233,
+        "ran": 91,
+        "sr": 5,
+        "stmId": "O3",
+        "lowLevel": {
+          "rv": 66,
+          "dv": 82,
+          "base": 10
+        },
+        "depth": {
+          "kft": 18,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 10,
+          "kts": 66
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "4958"
+      },
+      "818": {
+        "az": 72,
+        "ran": 79,
+        "sr": 5,
+        "stmId": "C9",
+        "lowLevel": {
+          "rv": 36,
+          "dv": 49,
+          "base": 12
+        },
+        "depth": {
+          "kft": 12,
+          "stmrel": 70
+        },
+        "maxRv": {
+          "kft": 12,
+          "kts": 36
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "3135"
+      },
+      "819": {
+        "az": 67,
+        "ran": 82,
+        "sr": 5,
+        "stmId": "H3",
+        "lowLevel": {
+          "rv": 29,
+          "dv": 44,
+          "base": 12
+        },
+        "depth": {
+          "kft": 13,
+          "stmrel": 73
+        },
+        "maxRv": {
+          "kft": 16,
+          "kts": 34
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "3136"
+      },
+      "820": {
+        "az": 70,
+        "ran": 88,
+        "sr": 5,
+        "stmId": "D4",
+        "lowLevel": {
+          "rv": 39,
+          "dv": 47,
+          "base": 10
+        },
+        "depth": {
+          "kft": 18,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 10,
+          "kts": 39
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "2970"
+      },
+      "824": {
+        "az": 255,
+        "ran": 98,
+        "sr": 5,
+        "stmId": "W4",
+        "lowLevel": {
+          "rv": 31,
+          "dv": 45,
+          "base": 12
+        },
+        "depth": {
+          "kft": 15,
+          "stmrel": 85
+        },
+        "maxRv": {
+          "kft": 12,
+          "kts": 31
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "2801"
+      },
+      "826": {
+        "az": 65,
+        "ran": 85,
+        "sr": 5,
+        "stmId": "D4",
+        "lowLevel": {
+          "rv": 32,
+          "dv": 49,
+          "base": 13
+        },
+        "depth": {
+          "kft": 13,
+          "stmrel": 74
+        },
+        "maxRv": {
+          "kft": 13,
+          "kts": 32
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "2742"
+      },
+      "827": {
+        "az": 50,
+        "ran": 98,
+        "sr": 5,
+        "stmId": "M4",
+        "lowLevel": {
+          "rv": 25,
+          "dv": 37,
+          "base": 12
+        },
+        "depth": {
+          "kft": 18,
+          "stmrel": 100
+        },
+        "maxRv": {
+          "kft": 19,
+          "kts": 38
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "2600"
+      },
+      "829": {
+        "az": 50,
+        "ran": 99,
+        "sr": 5,
+        "stmId": "M4",
+        "lowLevel": {
+          "rv": 23,
+          "dv": 49,
+          "base": 12
+        },
+        "depth": {
+          "kft": 16,
+          "stmrel": 89
+        },
+        "maxRv": {
+          "kft": 17,
+          "kts": 30
+        },
+        "tvs": false,
+        "motion": false,
+        "msi": "2541"
+      }
+    }
+  }
+}

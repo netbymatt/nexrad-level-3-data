@@ -39,11 +39,11 @@ Data and corresponding output are provided for quick and easy testing and experi
 An example of plotting data produced from this library can be found in [nexrad-level-3-plot](https://github.com/netbymatt/nexrad-level-3-plot)
 
 ## Testing
-A test script is provided and will generate ```.json``` output from all of the files in the ```./data``` folder.
+A test script is provided and will generate ```.json``` output from all of the files in the ```./data``` and ```./data-error``` folder.
 ```
 npm test
 ```
-A successful test will generate several ```.json``` files in the ```./output``` folder and will not log any errors to the console.
+A successful test will generate several ```.json``` files in the ```./output``` folder. Errors will be logged to the console for the data which has intentional errors, but the data that can be parsed will still be returned from each file.
 
 ## API
 
@@ -56,6 +56,19 @@ The parser makes some rudimentary checks to confirm data is valid. These checks 
 - Testing offsets for locations outside of the file provided
 
 The parser will also return rich error where possible indicating that a specific product or packet type is not supported.
+
+```javascript
+parser(file, {
+	// options shown as defaults
+	logger: console,
+})
+```
+
+### file
+File can be a buffer or string containing the data from one of the [Available Products]
+
+### options.logger
+By default all messages are logged to the console. Messages can be surpressed by passing ``false``. A custom logger such as winston or pino can be provided. Any logger provided must provide the ``log()`` and ``error()`` functions.
 
 ## Background Information
 Nexrad radar sites provide data in two formats: Level 2 and Level 3. Level 1 is used internally by the system and converted to Level 2 which is made available to end users. These products are detailed at https://www.ncdc.noaa.gov/data-access/radar-data/nexrad-products

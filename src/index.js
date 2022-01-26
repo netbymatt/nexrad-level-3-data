@@ -10,7 +10,9 @@ const radialPackets = require('./headers/radialpackets');
 const { products, productAbbreviations } = require('./products');
 
 // parse data provided from string or buffer
-const nexradLevel3Data = (file) => {
+const nexradLevel3Data = (file, _options) => {
+	const options = combineOptions(_options);
+
 	// convert to random access file
 	const raf = new RandomAccessFile(file);
 
@@ -70,11 +72,11 @@ const nexradLevel3Data = (file) => {
 			// read the symbology header
 			result.symbology = symbologyHeader(decompressed);
 			// read the radial packet header
-			result.radialPackets = radialPackets(decompressed, result.productDescription, result.symbology.numberLayers);
+			result.radialPackets = radialPackets(decompressed, result.productDescription, result.symbology.numberLayers, options);
 		}
 	} catch (e) {
-		console.error(e.stack);
-		console.log('Unable to parse symbology data');
+		options.logger.error(e.stack);
+		options.logger.log('Unable to parse symbology data');
 	}
 
 	// graphic parsing
@@ -90,8 +92,8 @@ const nexradLevel3Data = (file) => {
 			result.graphic = graphicHeader(decompressed);
 		}
 	} catch (e) {
-		console.error(e.stack);
-		console.log('Unable to parse graphic data');
+		options.logger.error(e.stack);
+		options.logger.log('Unable to parse graphic data');
 	}
 
 	// tabular parsing
@@ -107,8 +109,8 @@ const nexradLevel3Data = (file) => {
 			result.tabular = tabularHeader(decompressed, product);
 		}
 	} catch (e) {
-		console.error(e.stack);
-		console.log('Unable to parse tabular data');
+		options.logger.error(e.stack);
+		options.logger.log('Unable to parse tabular data');
 	}
 
 	// get formatted data if it exists
@@ -116,11 +118,25 @@ const nexradLevel3Data = (file) => {
 		const formatted = product?.formatter?.(result);
 		if (formatted) result.formatted = formatted;
 	} catch (e) {
-		console.error(e.stack);
-		console.log('Unable to parse formatted tabular data');
+		options.logger.error(e.stack);
+		options.logger.log('Unable to parse formatted tabular data');
 	}
 
 	return result;
+};
+
+// combine options and defaults
+const combineOptions = (newOptions) => {
+	let logger = newOptions?.logger ?? console;
+	if (logger === false) logger = nullLogger;
+	return {
+		...newOptions, logger,
+	};
+};
+
+const nullLogger = {
+	log: () => {},
+	error: () => {},
 };
 
 module.exports = nexradLevel3Data;

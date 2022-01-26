@@ -1,0 +1,2723 @@
+{
+  "textHeader": {
+    "fileType": "SDUS62",
+    "id": "KFFC",
+    "ddhhmm": "160923",
+    "type": "NSS",
+    "id3": "FFC"
+  },
+  "messageHeader": {
+    "code": 62,
+    "julianDate": 19009,
+    "seconds": 34194,
+    "length": 11356,
+    "source": 316,
+    "dest": 0,
+    "blocks": 3
+  },
+  "productDescription": {
+    "abbreviation": [
+      "NSS"
+    ],
+    "description": "Storm Structure",
+    "latitude": 33.363,
+    "longitude": -84.566,
+    "height": 972,
+    "code": 62,
+    "mode": 2,
+    "vcp": 215,
+    "sequenceNumber": 935,
+    "volumeScanNumber": 12,
+    "volumeScanDate": 19009,
+    "volumeScanTime": 33838,
+    "productDate": 19009,
+    "productTime": 34194,
+    "dependent27_28": {
+      "type": "Buffer",
+      "data": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "elevationNumber": 0,
+    "dependent30_53": {
+      "type": "Buffer",
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "version": 1,
+    "spotBlank": 0,
+    "offsetSymbology": 60,
+    "offsetGraphic": 4047,
+    "offsetTabular": 0
+  },
+  "symbology": {
+    "pages": [
+      [
+        "                                STORM STRUCTURE                                 ",
+        "     RADAR ID 316   DATE/TIME 01:16:22/09:23:58   NUMBER OF STORM CELLS  31     ",
+        "                                                                                ",
+        "   STORM      AZRAN      BASE     TOP    CELL BASED VIL    MAX REF    HEIGHT    ",
+        "     ID      DEG/NM       KFT     KFT       KG/M**2          DBZ        KFT     ",
+        "                                                                                ",
+        "     L5       19/ 53    < 5.1     8.9           5             48        5.1     ",
+        "     W8      112/ 89    <10.8    14.6           4             44       10.8     ",
+        "     I9      148/ 86    <10.2    13.1           4             43       10.2     ",
+        "     P3      100/ 65    < 6.6     9.2           4             45        6.6     ",
+        "     P8      148/ 79    < 9.0    11.8           4             43        9.0     ",
+        "     W4       60/ 49    < 4.5     9.0           3             45        6.5     ",
+        "     Q3      312/ 44    < 3.8     9.5           3             47        7.5     ",
+        "     P7       84/ 62    < 6.3     8.7           3             43        6.3     ",
+        "     S6      125/ 67    < 7.0    11.6           2             41        9.5     ",
+        "     B6      128/ 83    < 9.7    12.6           2             39        9.7     "
+      ],
+      [
+        "                                STORM STRUCTURE                                 ",
+        "     RADAR ID 316   DATE/TIME 01:16:22/09:23:58   NUMBER OF STORM CELLS  31     ",
+        "                                                                                ",
+        "   STORM      AZRAN      BASE     TOP    CELL BASED VIL    MAX REF    HEIGHT    ",
+        "     ID      DEG/NM       KFT     KFT       KG/M**2          DBZ        KFT     ",
+        "                                                                                ",
+        "     U8       77/ 64    < 6.5     8.3           2             42        6.5     ",
+        "     T6      161/ 67    < 7.0     9.6           2             39        7.0     ",
+        "     R2      341/ 15      3.1     8.1           2             43        8.1     ",
+        "     Q9      139/ 36      8.1     9.0           2             46        8.1     ",
+        "     T8      157/ 17      7.8     7.9           2             45        7.9     ",
+        "     H8      316/ 64    < 6.6     9.1           2             38        6.6     ",
+        "     R9      167/  3      3.2   > 5.1           1             44        4.9     ",
+        "     Q8       23/ 13      7.7     8.1           1             44        8.1     ",
+        "     R8      149/ 39    < 3.3     4.9           1             40        4.9     ",
+        "     V1      343/ 48    < 4.3     8.8           1             37        8.8     "
+      ],
+      [
+        "                                STORM STRUCTURE                                 ",
+        "     RADAR ID 316   DATE/TIME 01:16:22/09:23:58   NUMBER OF STORM CELLS  31     ",
+        "                                                                                ",
+        "   STORM      AZRAN      BASE     TOP    CELL BASED VIL    MAX REF    HEIGHT    ",
+        "     ID      DEG/NM       KFT     KFT       KG/M**2          DBZ        KFT     ",
+        "                                                                                ",
+        "     J8      206/ 38    < 3.4     8.1           1             37        8.1     ",
+        "     O5      111/ 50    < 4.8     8.7           1             36        6.6     ",
+        "     U1      325/ 57    < 5.5     7.7           1             36        7.7     ",
+        "     D6       28/ 37      4.3     8.2           1             40        6.4     ",
+        "     O8      305/ 56    < 5.4     7.6           1             35        7.6     ",
+        "     I5       57/ 22      7.8     8.7           1             43        7.8     ",
+        "     Y8       37/  6      3.2     7.2           1             41        7.2     ",
+        "     S9      180/ 19    < 1.3     3.2           1             39        1.3     ",
+        "     V7      174/ 57      7.8    10.4           0             34        7.8     ",
+        "     O6      360/ 23      6.6     8.1           0             37        8.1     "
+      ],
+      [
+        "                                STORM STRUCTURE                                 ",
+        "     RADAR ID 316   DATE/TIME 01:16:22/09:23:58   NUMBER OF STORM CELLS  31     ",
+        "                                                                                ",
+        "   STORM      AZRAN      BASE     TOP    CELL BASED VIL    MAX REF    HEIGHT    ",
+        "     ID      DEG/NM       KFT     KFT       KG/M**2          DBZ        KFT     ",
+        "                                                                                ",
+        "     B9      336/  8    < 0.5     0.8           0             38        0.5     "
+      ],
+      [
+        "                       STORM CELL SEGMENTS ADAPTATION DATA                      ",
+        "                                                                                ",
+        "    60(DBZ) THRESH (REFLECTIVITY #1)      1.9  (KM) THRESH (SEGMENT LENGTH #1)  ",
+        "    55(DBZ) THRESH (REFLECTIVITY #2)      1.9  (KM) THRESH (SEGMENT LENGTH #2)  ",
+        "    50(DBZ) THRESH (REFLECTIVITY #3)      1.9  (KM) THRESH (SEGMENT LENGTH #3)  ",
+        "    45(DBZ) THRESH (REFLECTIVITY #4)      1.9  (KM) THRESH (SEGMENT LENGTH #4)  ",
+        "    40(DBZ) THRESH (REFLECTIVITY #5)      1.9  (KM) THRESH (SEGMENT LENGTH #5)  ",
+        "    35(DBZ) THRESH (REFLECTIVITY #6)      1.9  (KM) THRESH (SEGMENT LENGTH #6)  ",
+        "    30(DBZ) THRESH (REFLECTIVITY #7)      1.9  (KM) THRESH (SEGMENT LENGTH #7)  ",
+        "     7      NBR REFLECTIVITY LEVELS         5 (DBZ) THRESH (DROPOUT REF DIFF)   ",
+        "     3      REFLECTIVITY AVG FACTOR         2       THRESH (DROPOUT  COUNT)     ",
+        "   460 (KM) THRESH (MAX SEGMENT RANGE)   6000       MAX # OF SEGMENTS/ELEV      ",
+        "  1.37      MASS COEFFICIENT FACTOR        15       MAX # OF SEGMENTS/RADIAL    ",
+        " 486.0      MASS MULTIPLICATIVE FACTOR                                          ",
+        " 53000.0 (HR*KG/KM**4) MASS WEIGHTED FACTOR                                     "
+      ],
+      [
+        "                    STORM CELL CENTROIDS ADAPTATION DATA                        ",
+        "                                                                                ",
+        " 10.0 (KM**2) THRESH (COMPONENT AREA #1)      2 (BIN) THRESH (SEGMENT OVERLAP)  ",
+        " 10.0 (KM**2) THRESH (COMPONENT AREA #2)    1.5 (DEG) THRESH (AZ SEPARATION)    ",
+        " 10.0 (KM**2) THRESH (COMPONENT AREA #3)   4.00  (KM) THRESH (DEPTH DELETE)     ",
+        " 10.0 (KM**2) THRESH (COMPONENT AREA #4)    5.0  (KM) THRESH (HORIZONTAL DELETE)",
+        " 10.0 (KM**2) THRESH (COMPONENT AREA #5)    3.0 (DEG) THRESH (ELEVATION MERGE)  ",
+        " 10.0 (KM**2) THRESH (COMPONENT AREA #6)    4.0  (KM) THRESH (HEIGHT MERGE)     ",
+        " 10.0 (KM**2) THRESH (COMPONENT AREA #7)   10.0  (KM) THRESH (HORIZONTAL MERGE) ",
+        "  5.0    (KM) THRESH (SEARCH RADIUS #1)       2       THRESH (# SEGMENTS/COMP)  ",
+        "  7.5    (KM) THRESH (SEARCH RADIUS #2)     120       THRESH (MAX COMPS/ELEV)   ",
+        " 10.0    (KM) THRESH (SEARCH RADIUS #3)      70       THRESH (MAX POT COMPS/ELV)",
+        "  120 (KG/M**2) THRESH (MX CELL-BASED VIL)  100       THRESH (MAX CELLS/VOL)    ",
+        "                                            130       THRESH (MX DETECTED CELLS)"
+      ],
+      [
+        "              STORM CELL TRACKING/FORECAST ADAPTATION DATA                      ",
+        "                                                                                ",
+        "    225   (DEG) DEFAULT (DIRECTION)      2.5   (M/S) THRESH (MINIMUM SPEED)     ",
+        "   25.0   (KTS) DEFAULT (SPEED)           20    (KM) ALLOWABLE ERROR            ",
+        "     20   (MIN) TIME (MAXIMUM)            15   (MIN) FORECAST INTERVAL          ",
+        "     10         NUMBER OF PAST VOLUMES     4         NUMBER OF INTERVALS        ",
+        "   30.0   (M/S) CORRELATION SPEED         15   (MIN) ERROR INTERVAL             ",
+        "                                                                                ",
+        "                                                                                ",
+        "              SCIT REFLECTIVITY MEDIAN FILTER                                   ",
+        "                                                                                ",
+        "    7.0   (KM)  FILTER KERNEL SIZE       0.5         THRESH (FILTER FRACTION)   ",
+        "    Yes         REFLECTIVITY FILTERED                                           "
+      ]
+    ]
+  },
+  "radialPackets": [],
+  "graphic": {
+    "cells": {
+      "L5": {
+        "iPosition": 258,
+        "jPosition": 735,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8900,
+              7900,
+              8800,
+              8000,
+              6400,
+              7300,
+              6900,
+              7000,
+              7200
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              5100,
+              6500,
+              4000,
+              3700,
+              3300,
+              2800,
+              2300,
+              1800,
+              6500
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              5100,
+              6500,
+              4000,
+              5500,
+              5100,
+              6300,
+              5300,
+              6200,
+              7200
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              5,
+              2,
+              5,
+              5,
+              5,
+              4,
+              3,
+              2,
+              3
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              48,
+              47,
+              48,
+              48,
+              51,
+              49,
+              48,
+              48,
+              48
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6200,
+              6600,
+              5700,
+              4800,
+              4700,
+              4600,
+              5400,
+              5000,
+              6900
+            ]
+          }
+        ],
+        "nm": 52.576060117817775,
+        "deg": 0
+      },
+      "W8": {
+        "iPosition": 1224,
+        "jPosition": -498,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              14600
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              10800
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              10800
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              4
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              44
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              10800
+            ]
+          }
+        ],
+        "nm": 89.18949267478615,
+        "deg": 0
+      },
+      "I9": {
+        "iPosition": 669,
+        "jPosition": -1084,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              13100
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              10200
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              10200
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              4
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              43
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              10300
+            ]
+          }
+        ],
+        "nm": 85.97599282164641,
+        "deg": 0
+      },
+      "P3": {
+        "iPosition": 942,
+        "jPosition": -163,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              9200,
+              8900,
+              8600,
+              10900,
+              10700,
+              7500,
+              9600,
+              8000,
+              8100,
+              8600
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              6600,
+              6500,
+              6200,
+              8400,
+              5500,
+              5300,
+              5200,
+              5500,
+              6000,
+              6300
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              6600,
+              8900,
+              8600,
+              8400,
+              8100,
+              7500,
+              7600,
+              8000,
+              8100,
+              8600
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              4,
+              3,
+              3,
+              1,
+              3,
+              2,
+              3,
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              45,
+              43,
+              44,
+              45,
+              46,
+              43,
+              43,
+              43,
+              44,
+              45
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6900,
+              7300,
+              7300,
+              9000,
+              6200,
+              5900,
+              5800,
+              6000,
+              6300,
+              7700
+            ]
+          }
+        ],
+        "nm": 64.52475559830484,
+        "deg": 0
+      },
+      "P8": {
+        "iPosition": 618,
+        "jPosition": -993,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              11800
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              9000
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              9000
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              4
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              43
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              9700
+            ]
+          }
+        ],
+        "nm": 78.94196846648474,
+        "deg": 0
+      },
+      "W4": {
+        "iPosition": 637,
+        "jPosition": 363,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              9000,
+              7700,
+              8700,
+              9800,
+              6900,
+              7700,
+              8200,
+              8100,
+              8100
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              4500,
+              3800,
+              3000,
+              6000,
+              2000,
+              1600,
+              1400,
+              1400,
+              1700
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              6500,
+              5600,
+              6900,
+              7800,
+              6900,
+              7700,
+              7100,
+              8100,
+              8100
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              45,
+              46,
+              47,
+              47,
+              49,
+              47,
+              51,
+              49,
+              50
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              5600,
+              5900,
+              6200,
+              6900,
+              5300,
+              5100,
+              5500,
+              5700,
+              5900
+            ]
+          }
+        ],
+        "nm": 49.4850227545523,
+        "deg": 0
+      },
+      "Q3": {
+        "iPosition": -481,
+        "jPosition": 436,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              9500,
+              9200,
+              8900,
+              9000,
+              9100,
+              9200,
+              10200,
+              10400,
+              9500,
+              10100
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              3800,
+              3900,
+              3600,
+              3700,
+              3900,
+              4100,
+              4700,
+              4800,
+              5100,
+              5600
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7500,
+              7100,
+              7100,
+              7000,
+              7100,
+              7800,
+              8000,
+              8800,
+              7200,
+              7600
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              47,
+              47,
+              47,
+              45,
+              44,
+              42,
+              43,
+              44,
+              44,
+              45
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6200,
+              5700,
+              6200,
+              6800,
+              5500,
+              5700,
+              6000,
+              6500,
+              6500,
+              6700
+            ]
+          }
+        ],
+        "nm": 43.81732133175796,
+        "deg": 0
+      },
+      "P7": {
+        "iPosition": 919,
+        "jPosition": 100,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8700,
+              8000
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              6300,
+              6000
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              6300,
+              6000
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              3,
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              43,
+              42
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7300,
+              6300
+            ]
+          }
+        ],
+        "nm": 62.39369751916596,
+        "deg": 0
+      },
+      "S6": {
+        "iPosition": 812,
+        "jPosition": -561,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              11600,
+              9500,
+              12500,
+              10400
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              7000,
+              7100,
+              9600,
+              7500
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              9500,
+              9500,
+              9600,
+              10400
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2,
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              41,
+              40,
+              41,
+              39
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7600,
+              7600,
+              9700,
+              8200
+            ]
+          }
+        ],
+        "nm": 66.61363883226709,
+        "deg": 0
+      },
+      "B6": {
+        "iPosition": 970,
+        "jPosition": -759,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              12600
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              9700
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              9700
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              39
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              9900
+            ]
+          }
+        ],
+        "nm": 83.13028308467622,
+        "deg": 0
+      },
+      "U8": {
+        "iPosition": 917,
+        "jPosition": 212,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8300
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              6500
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              6500
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              42
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6500
+            ]
+          }
+        ],
+        "nm": 63.525064732526204,
+        "deg": 0
+      },
+      "T6": {
+        "iPosition": 329,
+        "jPosition": -933,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              9600,
+              9800,
+              10200,
+              10900
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              7000,
+              7300,
+              7900,
+              8400
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7000,
+              7300,
+              10200,
+              8400
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2,
+              2,
+              1,
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              39,
+              38,
+              36,
+              37
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7700,
+              7700,
+              8200,
+              8500
+            ]
+          }
+        ],
+        "nm": 66.7729615923981,
+        "deg": 0
+      },
+      "R2": {
+        "iPosition": -76,
+        "jPosition": 214,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8100,
+              7900,
+              7800,
+              7700,
+              8300,
+              8600,
+              8800,
+              9100,
+              9600,
+              8600
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              3100,
+              7300,
+              7300,
+              1100,
+              1500,
+              1900,
+              2500,
+              3300,
+              4100,
+              4600
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              8100,
+              7900,
+              7300,
+              7500,
+              8300,
+              8200,
+              8300,
+              8400,
+              7800,
+              8600
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2,
+              1,
+              1,
+              5,
+              4,
+              4,
+              3,
+              2,
+              2,
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              43,
+              44,
+              47,
+              47,
+              48,
+              46,
+              46,
+              44,
+              41,
+              40
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              5200,
+              7700,
+              7500,
+              3900,
+              4300,
+              4700,
+              6200,
+              6600,
+              7300,
+              5000
+            ]
+          }
+        ],
+        "nm": 15.327671204636644,
+        "deg": 0
+      },
+      "Q9": {
+        "iPosition": 350,
+        "jPosition": -403,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              9000
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              8100
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              8100
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              46
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              8300
+            ]
+          }
+        ],
+        "nm": 36.02651665631961,
+        "deg": 0
+      },
+      "T8": {
+        "iPosition": 94,
+        "jPosition": -226,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              7900,
+              8300,
+              5100
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              7800,
+              1700,
+              2100
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7900,
+              8300,
+              4100
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2,
+              4,
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              45,
+              43,
+              39
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7800,
+              3300,
+              2800
+            ]
+          }
+        ],
+        "nm": 16.52061070559727,
+        "deg": 0
+      },
+      "H8": {
+        "iPosition": -660,
+        "jPosition": 685,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              9100,
+              8800,
+              8500
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              6600,
+              6400,
+              6400
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              6600,
+              6400,
+              8500
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              2,
+              2,
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              38,
+              38,
+              35
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7500,
+              7500,
+              6700
+            ]
+          }
+        ],
+        "nm": 64.20243273233761,
+        "deg": 0
+      },
+      "R9": {
+        "iPosition": 11,
+        "jPosition": -50,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              5100
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              3200
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              4900
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              44
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              4600
+            ]
+          }
+        ],
+        "nm": 3.4554347718626275,
+        "deg": 0
+      },
+      "Q8": {
+        "iPosition": 76,
+        "jPosition": 180,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8100,
+              7900,
+              7500
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              7700,
+              3800,
+              900
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              8100,
+              7900,
+              1800
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              44,
+              45,
+              46
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7900,
+              5400,
+              2800
+            ]
+          }
+        ],
+        "nm": 13.187558517137601,
+        "deg": 0
+      },
+      "R8": {
+        "iPosition": 297,
+        "jPosition": -494,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              4900,
+              8400,
+              9100
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              3300,
+              3600,
+              4200
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              4900,
+              8400,
+              9100
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              40,
+              44,
+              42
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              3700,
+              5200,
+              5100
+            ]
+          }
+        ],
+        "nm": 38.90437257649378,
+        "deg": 0
+      },
+      "V1": {
+        "iPosition": -209,
+        "jPosition": 687,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8800,
+              10100,
+              9100,
+              8500,
+              9800,
+              9400,
+              9100,
+              9100,
+              9400,
+              9900
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              4300,
+              3900,
+              3600,
+              3200,
+              3000,
+              2900,
+              4200,
+              5800,
+              3100,
+              3400
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              8800,
+              7700,
+              7200,
+              8500,
+              7900,
+              7400,
+              7300,
+              7100,
+              7500,
+              8000
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1,
+              1,
+              2,
+              1,
+              2,
+              2,
+              2,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              37,
+              42,
+              42,
+              42,
+              44,
+              45,
+              45,
+              42,
+              42,
+              43
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6900,
+              6600,
+              6600,
+              6800,
+              6700,
+              6900,
+              7500,
+              7600,
+              6300,
+              6100
+            ]
+          }
+        ],
+        "nm": 48.4670626185062,
+        "deg": 0
+      },
+      "J8": {
+        "iPosition": -253,
+        "jPosition": -510,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8100,
+              9500
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              3400,
+              7400
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              8100,
+              7400
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1,
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              37,
+              36
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              5600,
+              8200
+            ]
+          }
+        ],
+        "nm": 38.42507591431131,
+        "deg": 0
+      },
+      "O5": {
+        "iPosition": 685,
+        "jPosition": -270,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8700
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              4800
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              6600
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              36
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7000
+            ]
+          }
+        ],
+        "nm": 49.69571075514672,
+        "deg": 0
+      },
+      "U1": {
+        "iPosition": -480,
+        "jPosition": 690,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              7700,
+              7400,
+              9600,
+              9300,
+              9000,
+              9100,
+              9000,
+              9300,
+              9800,
+              10100
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              5500,
+              5300,
+              5100,
+              4900,
+              4900,
+              4900,
+              5100,
+              5400,
+              5600,
+              6100
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7700,
+              7400,
+              7000,
+              7000,
+              6900,
+              6700,
+              7100,
+              7400,
+              7700,
+              6100
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1,
+              1,
+              2,
+              2,
+              2,
+              2,
+              3,
+              2,
+              2,
+              3
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              36,
+              37,
+              41,
+              42,
+              44,
+              43,
+              44,
+              42,
+              41,
+              42
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6200,
+              6100,
+              5900,
+              5700,
+              6400,
+              6100,
+              6500,
+              6500,
+              6700,
+              6600
+            ]
+          }
+        ],
+        "nm": 56.731631312247025,
+        "deg": 0
+      },
+      "D6": {
+        "iPosition": 256,
+        "jPosition": 486,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8200,
+              8600,
+              8400,
+              8100,
+              1400
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              4300,
+              1900,
+              1300,
+              800,
+              700
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              6400,
+              6900,
+              7100,
+              8100,
+              700
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1,
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              40,
+              43,
+              42,
+              43,
+              33
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6700,
+              6000,
+              5100,
+              4700,
+              900
+            ]
+          }
+        ],
+        "nm": 37.07489028216707,
+        "deg": 0
+      },
+      "O8": {
+        "iPosition": -682,
+        "jPosition": 475,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              7600
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              5400
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7600
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              35
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              6000
+            ]
+          }
+        ],
+        "nm": 56.09566762650255,
+        "deg": 0
+      },
+      "I5": {
+        "iPosition": 274,
+        "jPosition": 176,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8700
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              7800
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7800
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              43
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7900
+            ]
+          }
+        ],
+        "nm": 21.98004718105511,
+        "deg": 0
+      },
+      "Y8": {
+        "iPosition": 53,
+        "jPosition": 69,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              7200,
+              2200,
+              3300
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              3200,
+              500,
+              700
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7200,
+              500,
+              3300
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              41,
+              41,
+              40
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              4700,
+              1600,
+              2000
+            ]
+          }
+        ],
+        "nm": 5.872420262332392,
+        "deg": 0
+      },
+      "S9": {
+        "iPosition": 2,
+        "jPosition": -277,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              3200
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              1300
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              1300
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              39
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              1700
+            ]
+          }
+        ],
+        "nm": 18.69649844446118,
+        "deg": 0
+      },
+      "V7": {
+        "iPosition": 87,
+        "jPosition": -833,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              10400
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              7800
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              7800
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              34
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              9000
+            ]
+          }
+        ],
+        "nm": 56.52883368073598,
+        "deg": 0
+      },
+      "O6": {
+        "iPosition": 0,
+        "jPosition": 345,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              8100,
+              8100,
+              8300,
+              8300,
+              8400,
+              5300,
+              8700,
+              8900
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              6600,
+              6900,
+              7400,
+              4000,
+              1400,
+              2600,
+              2300,
+              7700
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              8100,
+              8100,
+              8300,
+              7800,
+              7900,
+              5300,
+              8700,
+              7700
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              0,
+              0,
+              1,
+              2,
+              3,
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              37,
+              39,
+              42,
+              45,
+              46,
+              37,
+              43,
+              40
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              7800,
+              7900,
+              7700,
+              6000,
+              4400,
+              4000,
+              4500,
+              7900
+            ]
+          }
+        ],
+        "nm": 23.285645625,
+        "deg": 0
+      },
+      "B9": {
+        "iPosition": -51,
+        "jPosition": 114,
+        "trends": [
+          null,
+          {
+            "type": "Cell top, feet",
+            "data": [
+              800
+            ]
+          },
+          {
+            "type": "Cell base, feet",
+            "data": [
+              500
+            ]
+          },
+          {
+            "type": "Max ref height, feet",
+            "data": [
+              500
+            ]
+          },
+          {
+            "type": "Probability of Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Probability of Severe Hail, %",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Cell based VIL, kg/m^2",
+            "data": [
+              0
+            ]
+          },
+          {
+            "type": "Max ref, dBz",
+            "data": [
+              38
+            ]
+          },
+          {
+            "type": "Centroid height, feet",
+            "data": [
+              600
+            ]
+          }
+        ],
+        "nm": 8.42926533735189,
+        "deg": 0
+      }
+    },
+    "volumeTimes": [
+      563,
+      557,
+      551,
+      545,
+      539,
+      533,
+      527,
+      521,
+      515,
+      509
+    ]
+  }
+}

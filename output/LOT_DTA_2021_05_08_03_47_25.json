@@ -1,0 +1,322 @@
+{
+  "textHeader": {
+    "fileType": "SDUS83",
+    "id": "KLOT",
+    "ddhhmm": "080347",
+    "type": "DTA",
+    "id3": "LOT"
+  },
+  "messageHeader": {
+    "code": 172,
+    "julianDate": 18756,
+    "seconds": 13943,
+    "length": 2010,
+    "source": 337,
+    "dest": 0,
+    "blocks": 3
+  },
+  "productDescription": {
+    "abbreviation": "DTA",
+    "description": "Storm Total Precipitation",
+    "latitude": 41.604,
+    "longitude": -88.085,
+    "height": 760,
+    "code": 172,
+    "mode": 1,
+    "vcp": 35,
+    "sequenceNumber": 13392,
+    "volumeScanNumber": 24,
+    "volumeScanDate": 18756,
+    "volumeScanTime": 13645,
+    "productDate": 18756,
+    "productTime": 13942,
+    "accumulationStartDate": 18756,
+    "accumulationStartMinutes": 231,
+    "elevationNumber": 0,
+    "nullProductFlag": {
+      "value": 4,
+      "reason": "No precipitation detected since hh:mmZ. Threshold: 'Time Without Precipitation for Resetting Storm Totals' [RAINT] is xx minutes or No precipitation detected since RPG startup."
+    },
+    "plot": {
+      "scale": 100,
+      "offset": 0,
+      "dependent35": 0,
+      "maxDataValue": 255,
+      "leadingFlags": {
+        "noData": 0
+      },
+      "trailingFlags": 0
+    },
+    "dependent39_46": {
+      "type": "Buffer",
+      "data": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "maxAccumulation": 0,
+    "accumulationEndDate": 18756,
+    "accumulationEndMinutes": 231,
+    "meanFieldBias": 0,
+    "compressionMethod": 1,
+    "uncompressedSize": 7036,
+    "version": 2,
+    "spotBlank": 0,
+    "offsetSymbology": 60,
+    "offsetGraphic": 0,
+    "offsetTabular": 473
+  },
+  "symbology": {
+    "numberLayers": 2
+  },
+  "radialPackets": [
+    [
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 9,
+        "packetCodeHex": "1",
+        "text": "No precipitation detected since 5/7/2021 22:28 Z. "
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 16,
+        "packetCodeHex": "1",
+        "text": "Threshold: 'Time Without Precipitation for Resetting Storm Totals'"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 23,
+        "packetCodeHex": "1",
+        "text": "   [RAINT] is 60 minutes"
+      }
+    ],
+    [
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 36,
+        "packetCodeHex": "1",
+        "text": "ADAP(43)     0.5M_Enhanc      44   0.822      27     300     1.4  0.0142   0.770"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 45,
+        "packetCodeHex": "1",
+        "text": "   -1.67  0.8000  0.9000    53.0  200.00      30      70    10.0     0.6     0.8"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 54,
+        "packetCodeHex": "1",
+        "text": "     0.8     1.0     2.8     2.8    45.0    99.9     0.5     100      60       5"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 63,
+        "packetCodeHex": "1",
+        "text": "      19      60      30     800     N/A     N/A     N/A     168      NO      ON"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 72,
+        "packetCodeHex": "1",
+        "text": "    80.0      ON    11.0     3.0SUPL(14) DEFAULT       0   0.015   18756   13645"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 81,
+        "packetCodeHex": "1",
+        "text": "       F       F       F   18755    1348   99.98     1.3     0.0       0BIAS(12)"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 90,
+        "packetCodeHex": "1",
+        "text": "     N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A     N/A"
+      },
+      {
+        "iStartingPoint": 7,
+        "jStartingPoint": 99,
+        "packetCodeHex": "1",
+        "text": "     N/A     N/A"
+      }
+    ]
+  ],
+  "tabular": {
+    "messageHeader": {
+      "code": 172,
+      "julianDate": 0,
+      "seconds": 0,
+      "length": 946,
+      "source": 337,
+      "dest": 0,
+      "blocks": 3
+    },
+    "productDescription": {
+      "abbreviation": "DTA",
+      "description": "Storm Total Precipitation",
+      "latitude": 41.604,
+      "longitude": -88.085,
+      "height": 760,
+      "code": 172,
+      "mode": 1,
+      "vcp": 35,
+      "sequenceNumber": 0,
+      "volumeScanNumber": 24,
+      "volumeScanDate": 18756,
+      "volumeScanTime": 13645,
+      "productDate": 18756,
+      "productTime": 13942,
+      "accumulationStartDate": 18756,
+      "accumulationStartMinutes": 231,
+      "elevationNumber": 0,
+      "nullProductFlag": {
+        "value": 4,
+        "reason": "No precipitation detected since hh:mmZ. Threshold: 'Time Without Precipitation for Resetting Storm Totals' [RAINT] is xx minutes or No precipitation detected since RPG startup."
+      },
+      "plot": {
+        "scale": 100,
+        "offset": 0,
+        "dependent35": 0,
+        "maxDataValue": 255,
+        "leadingFlags": {
+          "noData": 0
+        },
+        "trailingFlags": 0
+      },
+      "dependent39_46": {
+        "type": "Buffer",
+        "data": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "maxAccumulation": 0,
+      "accumulationEndDate": 18756,
+      "accumulationEndMinutes": 231,
+      "meanFieldBias": 0,
+      "compressionMethod": 0,
+      "uncompressedSize": 0,
+      "version": 2,
+      "spotBlank": 0,
+      "offsetSymbology": 0,
+      "offsetGraphic": 0,
+      "offsetTabular": 473
+    },
+    "totalPages": 5,
+    "charactersPerLine": 80,
+    "pages": [
+      [
+        "                        STORM TOTAL ACCUMULATION                                ",
+        "                                                                                ",
+        "RADAR ID: KLOT     DATE: 05/08/21     TIME: 03:47                               ",
+        "VOLUME COVERAGE PATTERN:  35            MODE: Clear-Air                         ",
+        "GAGE BIAS APPLIED                        -    NO                                ",
+        "     BIAS  ESTIMATE                      -      N/A                             ",
+        "     EFFECTIVE # G/R PAIRS               -      N/A                             ",
+        "     MEMORY SPAN (HOURS)                 -      N/A                             ",
+        "     DATE/TIME LAST BIAS UPDATE          -      N/A                             ",
+        "HYBRID RATE PERCENT BINS FILLED          -    99.98                             ",
+        "            HIGHEST ELEV. USED (DEG)     -     1.3                              ",
+        "            TOTAL PRECIP AREA (KM**2)    -     0.0                              ",
+        "AWIPS SITE ID OF MOST RECENT BIAS SOURCE -   N/A                                ",
+        "R(A) STATUS                              - ON                                   ",
+        "R(A) MODE                                - DEFAULT (0.015)                      ",
+        "R(A) ALPHA                               - 0.015 (INSUFFICIENT DATA)            ",
+        "NUMBER OF DATA BINS TO COMPUTE ALPHA     -        0                             "
+      ],
+      [
+        "DEFAULT MELTING LAYER DEPTH   0.5 KM     MAX KDP BEAM BLOCKAGE        70 %      ",
+        "MELTING LAYER SOURCE     MODEL_ENHANCED  MIN KDP USAGE RATE           10.0 MM/HR",
+        "KDP COEFFICIENT              44          WET SNOW R(Z) MULTIPLIER      0.6      ",
+        "KDP EXPONENT                  0.822      GRAUPEL R(Z) MULTIPLIER       0.8      ",
+        "KDP COEFF FOR RAIN/HAIL      27          RAIN/HAIL R(Z) MULTIPLIER     0.8      ",
+        "Z-R COEFFICIENT             300          DRY SNOW BELOW ML TOP MULT.   1.0      ",
+        "Z-R EXPONENT                  1.4        DRY SNOW R(Z) MULTIPLIER      2.8      ",
+        "ZDR/Z COEFFICIENT             0.0142     CRYSTALS R(Z) MULTIPLIER      2.8      ",
+        "ZDR/Z EXPONENT FOR Z          0.770      HVY RAIN REFL THRESH R(KDP)  45.0 dBZ  ",
+        "ZDR/Z EXPONENT FOR ZDR       -1.67       % RATE GRID FILLED THRESH    99.9 %    ",
+        "MIN CORREL COEFF FOR PRECIP   0.8000     PAIF PRECIP RATE THRESH       0.5 MM/HR",
+        "MIN CORREL COEFF FOR KDP      0.9000     PAIF PRECIP AREA THRESH     100   KM**2",
+        "MAX REFLECTIVITY             53.0 dBZ    PRECIP DETECTION TIME THRESH 60   MIN  ",
+        "MAX RATE                    200.00 MM/HR MIN EARLY TERMINATION ANGLE   5   DEG  ",
+        "MAX VOLUMES PER HOUR         30          NUMBER OF EXCLUSION ZONES    19        "
+      ],
+      [
+        "THRESHOLD ELAPSED TIME TO RESTART      60 MINUTES                               ",
+        "MAXIMUM TIME FOR INTERPOLATION         30 MINUTES                               ",
+        "MAXIMUM HOURLY ACCUMULATION VALUE     800 MM                                    ",
+        "TIME BIAS ESTIMATION                   50 MINUTES                               ",
+        "THRESHOLD NUMBER OF GAGE-RADAR PAIRS   10                                       ",
+        "RESET BIAS VALUE                        1.0                                     ",
+        "LONGEST ALLOWABLE LAG                 168 HOURS                                 ",
+        "BIAS FLAG APPLIED?                     NO                                       ",
+        "RPG ESTIMATED ISDP                     60 DEG                                   ",
+        "ISDP APPLIED TO DATA?                  NO                                       ",
+        "DATE OF ISDP ESTIMATE:           05/07/21                                       ",
+        "TIME OF ISDP ESTIMATE:              18:40                                       ",
+        "METSIGNAL PROCESSING:                  ON                                       ",
+        "METSIGNAL THRESHOLD:                   80.0                                     ",
+        "CAPPI PROCESSING:                      ON                                       ",
+        "CAPPI THRESHOLD:                       11.0 dBZ                                 ",
+        "CAPPI HEIGHT:                           3.0 KM                                  "
+      ],
+      [
+        "                            DUAL POL EXCLUSION ZONES                            ",
+        "                                                                                ",
+        "             ZONE BEG AZM END AZM BEG RNG (NM) END RNG (NM) ELEV ANG            ",
+        "               1  201.0   205.0       26           34          0.6              ",
+        "               2  235.0   243.0       24           31          0.6              ",
+        "               3  198.0   209.0       38           45          0.6              ",
+        "               4  214.0   236.0       31           42          0.6              ",
+        "               5  304.0   312.0       25           36          0.6              ",
+        "               6  230.0   236.0       34           40          0.6              ",
+        "               7  263.0   266.0       46           50          0.6              ",
+        "               8  267.0   276.0       35           53          0.6              ",
+        "               9  277.0   282.0       43           46          0.6              ",
+        "              10  281.0   303.0       38           44          0.6              ",
+        "              11  285.0   295.0       28           38          0.6              ",
+        "              12    0.0     0.0        0            0          0.0              ",
+        "              13    0.0     0.0        0            0          0.0              ",
+        "              14    0.0     0.0        0            0          0.0              "
+      ],
+      [
+        "                            DUAL POL EXCLUSION ZONES                            ",
+        "                                                                                ",
+        "             ZONE BEG AZM END AZM BEG RNG (NM) END RNG (NM) ELEV ANG            ",
+        "              15    0.0     0.0        0            0          0.0              ",
+        "              16    0.0     0.0        0            0          0.0              ",
+        "              17    0.0     0.0        0            0          0.0              ",
+        "              18    0.0     0.0        0            0          0.0              ",
+        "              19    0.0     0.0        0            0          0.0              "
+      ]
+    ]
+  }
+}

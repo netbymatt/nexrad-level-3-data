@@ -31,7 +31,6 @@ module.exports = {
 		],
 		'no-tabs': 0,
 		'max-len': 0,
-		'no-console': 0,
 		'no-bitwise': 0,
 	},
 	ignorePatterns: [

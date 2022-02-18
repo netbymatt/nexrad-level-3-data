@@ -28,7 +28,8 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/KBYX_NSS_2022_01_16_09_31');	// error with block id 4
 // const file = fs.readFileSync('./data/KCAE_NSS_2022_01_16_09_31');	// error with block id 5
 // const file = fs.readFileSync('./data/KFFC_NSS_2022_01_16_09_31');	// error with block id 7
-const file = fs.readFileSync('./data-error/KLOT_NSS_2022_01_16_09_31');	// error with block id 3
+// const file = fs.readFileSync('./data-error/KLOT_NSS_2022_01_16_09_31');	// error with block id 3
+const file = fs.readFileSync('./data-error/KLTX_NSS_2022_02_15_06_44');	// error with block id 3
 
 // 78 One-hour precipitation
 // const file = fs.readFileSync('./data/LOT_N1P_2021_01_31_11_06_30');

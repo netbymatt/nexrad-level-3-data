@@ -26,7 +26,7 @@ const parse = (raf, productDescription, layerCount, options) => {
 				layers.push(packets);
 			}
 		} catch (e) {
-			options.logger.error(e.stack);
+			options.logger.warn(e.stack);
 			// skip this layer
 			raf.seek(startPos + layerLength);
 			layers.push(undefined);

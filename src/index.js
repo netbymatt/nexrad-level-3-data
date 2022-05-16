@@ -75,8 +75,8 @@ const nexradLevel3Data = (file, _options) => {
 			result.radialPackets = radialPackets(decompressed, result.productDescription, result.symbology.numberLayers, options);
 		}
 	} catch (e) {
-		options.logger.error(e.stack);
-		options.logger.log('Unable to parse symbology data');
+		options.logger.warn(e.stack);
+		options.logger.warn('Unable to parse symbology data');
 	}
 
 	// graphic parsing
@@ -92,8 +92,8 @@ const nexradLevel3Data = (file, _options) => {
 			result.graphic = graphicHeader(decompressed);
 		}
 	} catch (e) {
-		options.logger.error(e.stack);
-		options.logger.log('Unable to parse graphic data');
+		options.logger.warn(e.stack);
+		options.logger.warn('Unable to parse graphic data');
 	}
 
 	// tabular parsing
@@ -109,8 +109,8 @@ const nexradLevel3Data = (file, _options) => {
 			result.tabular = tabularHeader(decompressed, product);
 		}
 	} catch (e) {
-		options.logger.error(e.stack);
-		options.logger.log('Unable to parse tabular data');
+		options.logger.warn(e.stack);
+		options.logger.warn('Unable to parse tabular data');
 	}
 
 	// get formatted data if it exists
@@ -118,8 +118,8 @@ const nexradLevel3Data = (file, _options) => {
 		const formatted = product?.formatter?.(result);
 		if (formatted) result.formatted = formatted;
 	} catch (e) {
-		options.logger.error(e.stack);
-		options.logger.log('Unable to parse formatted tabular data');
+		options.logger.warn(e.stack);
+		options.logger.warn('Unable to parse formatted tabular data');
 	}
 
 	return result;
@@ -137,6 +137,7 @@ const combineOptions = (newOptions) => {
 const nullLogger = {
 	log: () => {},
 	error: () => {},
+	warn: () => {},
 };
 
 module.exports = nexradLevel3Data;

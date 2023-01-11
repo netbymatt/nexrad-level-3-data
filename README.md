@@ -4,6 +4,9 @@ A javascript implementation for decoding Nexrad Level III radar files.
 
 You can find more information on how radar data is encoded at [NOAA](https://www.roc.noaa.gov/WSR88D/BuildInfo/Files.aspx). The work in this project is based mainly on the document [2620001 ICD FOR THE RPG TO CLASS 1 USER - Build 19.0](https://www.roc.noaa.gov/wsr88d/PublicDocs/ICDs/2620001Y.pdf).
 
+# Demo
+A live demo showing the output of this library (via [nexrad-level-3-plot](https://www.github.com/netbymatt/nexrad-level-3-plot)) for select radar sites is available at https://nexrad-demo.netbymatt.com/
+
 ## Contents
 1. [Install](#install)
 1. [Usage](#usage)

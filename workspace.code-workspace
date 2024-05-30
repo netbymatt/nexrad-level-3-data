@@ -32,6 +32,7 @@
 		"search.exclude": {
 			"**/data": true,
 			"**/output": true
-		}
+		},
+		"editor.formatOnSave": true,
 	}
 }

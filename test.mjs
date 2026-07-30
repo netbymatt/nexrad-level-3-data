@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 
-const fs = require('fs');
-const util = require('util');
-const parser = require('./src');
+import fs from 'node:fs/promises';
+import util from 'node:util';
+import nexradLevel3Data from './src/index.mjs';
 
 // read file
 
@@ -29,7 +29,7 @@ const parser = require('./src');
 // const file = fs.readFileSync('./data/KCAE_NSS_2022_01_16_09_31');	// error with block id 5
 // const file = fs.readFileSync('./data/KFFC_NSS_2022_01_16_09_31');	// error with block id 7
 // const file = fs.readFileSync('./data-error/KLOT_NSS_2022_01_16_09_31');	// error with block id 3
-const file = fs.readFileSync('./data-error/KLTX_NSS_2022_02_15_06_44');	// error with block id 3
+const file = await fs.readFile('./data-error/KLTX_NSS_2022_02_15_06_44');	// error with block id 3
 
 // 78 One-hour precipitation
 // const file = fs.readFileSync('./data/LOT_N1P_2021_01_31_11_06_30');
@@ -56,12 +56,18 @@ const file = fs.readFileSync('./data-error/KLTX_NSS_2022_02_15_06_44');	// error
 
 // custom logger for testing
 const customLogger = {
-	log: (message) => { console.log('CUSTOM LOG MESSAGE'); console.log(message); },
-	error: (message) => { console.log('CUSTOM ERROR MESSAGE'); console.error(message); },
+	log: (message) => {
+		console.log('CUSTOM LOG MESSAGE');
+		console.log(message);
+	},
+	error: (message) => {
+		console.log('CUSTOM ERROR MESSAGE');
+		console.error(message);
+	},
 };
 
 // pass to parser as a string or buffer
-const level3Data = parser(file);
+const level3Data = nexradLevel3Data(file);
 
 // try different loggers
 // const level3Data = parser(file, { logger: false });

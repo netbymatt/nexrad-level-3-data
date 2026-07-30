@@ -1,6 +1,6 @@
 // register packet parsers
 
-const { parser } = require('../packets');
+const { parser } = require('../packets/index.mjs');
 
 const parse = (raf, productDescription, layerCount, options) => {
 	const layers = [];

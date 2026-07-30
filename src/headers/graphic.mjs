@@ -1,5 +1,5 @@
-const { parser } = require('../packets');
-const graphic22 = require('./graphic22');
+import { parser } from '../packets/index.mjs';
+import graphic22 from './graphic22.mjs';
 
 const parse = (raf) => {
 	const blockDivider = raf.readShort();
@@ -48,4 +48,4 @@ const parse = (raf) => {
 
 //
 
-module.exports = parse;
+export default parse;

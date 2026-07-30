@@ -25,7 +25,7 @@ class RandomAccessFile {
 			this.readFloatLocal = this.buffer.readFloatBE.bind(this.buffer);
 			this.readIntLocal = this.buffer.readIntBE.bind(this.buffer);
 			this.readUIntLocal = this.buffer.readUIntBE.bind(this.buffer);
-		}	else {
+		} else {
 			this.readFloatLocal = this.buffer.readFloatLE.bind(this.buffer);
 			this.readIntLocal = this.buffer.readIntLE.bind(this.buffer);
 			this.readUIntLocal = this.buffer.readUIntLE.bind(this.buffer);
@@ -106,6 +106,8 @@ class RandomAccessFile {
 	}
 }
 
-module.exports.RandomAccessFile = RandomAccessFile;
-module.exports.BIG_ENDIAN = BIG_ENDIAN;
-module.exports.LITTLE_ENDIAN = LITTLE_ENDIAN;
+export {
+	RandomAccessFile,
+	BIG_ENDIAN,
+	LITTLE_ENDIAN,
+};

@@ -1,13 +1,28 @@
-const bzip = require('seek-bzip');
-const { RandomAccessFile } = require('./randomaccessfile');
-const textHeader = require('./headers/text');
-const messageHeader = require('./headers/message');
-const { parse: productDescription } = require('./headers/productdescription');
-const symbologyHeader = require('./headers/symbology');
-const tabularHeader = require('./headers/tabular');
-const graphicHeader = require('./headers/graphic');
-const radialPackets = require('./headers/radialpackets');
-const { products, productAbbreviations } = require('./products');
+import bzip from 'seek-bzip';
+import { RandomAccessFile } from './randomaccessfile/index.mjs';
+import textHeader from './headers/text.js';
+import messageHeader from './headers/message.js';
+import { parse as productDescription } from './headers/productdescription.js';
+import symbologyHeader from './headers/symbology.js';
+import tabularHeader from './headers/tabular.js';
+import graphicHeader from './headers/graphic.mjs';
+import radialPackets from './headers/radialpackets.js';
+import { products, productAbbreviations } from './products/index.js';
+
+const nullLogger = {
+	log: () => { },
+	error: () => { },
+	warn: () => { },
+};
+
+// combine options and defaults
+const combineOptions = (newOptions) => {
+	let logger = newOptions?.logger ?? console;
+	if (logger === false) logger = nullLogger;
+	return {
+		...newOptions, logger,
+	};
+};
 
 // parse data provided from string or buffer
 const nexradLevel3Data = (file, _options) => {
@@ -82,7 +97,7 @@ const nexradLevel3Data = (file, _options) => {
 	// graphic parsing
 	try {
 		if (result.productDescription.offsetGraphic !== 0) {
-		// jump to graphic, convert halfwords to bytes
+			// jump to graphic, convert halfwords to bytes
 			const offsetGraphicBytes = textHeaderLength + result.productDescription.offsetGraphic * 2;
 			// error checking
 			if (offsetGraphicBytes > decompressed.getLength()) throw new Error(`Invalid graphic offset: ${result.productDescription.offsetGraphic}`);
@@ -99,7 +114,7 @@ const nexradLevel3Data = (file, _options) => {
 	// tabular parsing
 	try {
 		if (result.productDescription.offsetTabular !== 0) {
-		// jump to tabular, convert halfwords to bytes
+			// jump to tabular, convert halfwords to bytes
 			const offsetTabularBytes = textHeaderLength + result.productDescription.offsetTabular * 2;
 			// error checking
 			if (offsetTabularBytes > decompressed.getLength()) throw new Error(`Invalid tabular offset: ${result.productDescription.offsetTabular}`);
@@ -125,19 +140,4 @@ const nexradLevel3Data = (file, _options) => {
 	return result;
 };
 
-// combine options and defaults
-const combineOptions = (newOptions) => {
-	let logger = newOptions?.logger ?? console;
-	if (logger === false) logger = nullLogger;
-	return {
-		...newOptions, logger,
-	};
-};
-
-const nullLogger = {
-	log: () => {},
-	error: () => {},
-	warn: () => {},
-};
-
-module.exports = nexradLevel3Data;
+export default nexradLevel3Data;

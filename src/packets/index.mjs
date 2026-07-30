@@ -1,15 +1,17 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'node:fs/promises';
+import path from 'node:path';
 
 // load all packets in folder automatically
-const files = fs.readdirSync(__dirname).filter((file) => !fs.lstatSync(path.join(__dirname, file)).isDirectory() && file !== 'index.js');
-// eslint-disable-next-line import/no-dynamic-require, global-require
+const files = (await fs.readdir(__dirname)).filter((file) => !fs.lstatSync(path.join(__dirname, file)).isDirectory() && file !== 'index.js');
+// eslint-disable-next-line import/no-dynamic-require
 const packetsRaw = files.map((file) => require(path.join(__dirname, file)));
 
 // make up a list of packets by integer type
 const packets = {};
 packetsRaw.forEach((packet) => {
-	if (packets[packet.code]) { throw new Error(`Duplicate packet code ${packet.code}`); }
+	if (packets[packet.code]) {
+		throw new Error(`Duplicate packet code ${packet.code}`);
+	}
 	packets[packet.code] = packet;
 });
 
@@ -29,7 +31,7 @@ const parser = (raf, productDescription) => {
 	return packet.parser(raf, productDescription);
 };
 
-module.exports = {
+export {
 	packets,
 	parser,
 };

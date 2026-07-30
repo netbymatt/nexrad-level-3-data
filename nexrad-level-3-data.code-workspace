@@ -17,7 +17,8 @@
 			"mseconds",
 			"rrrrvvvv",
 			"SDUS",
-			"Symbologies"
+			"Symbologies",
+			"nexrad"
 		],
 		"cSpell.ignorePaths": [
 			"**/package-lock.json",

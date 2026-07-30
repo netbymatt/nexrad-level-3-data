@@ -11,11 +11,11 @@
 			"skipFiles": [
 				"<node_internals>/**"
 			],
-			"program": "${workspaceFolder}/test.js"
+			"program": "${workspaceFolder}/test.mjs"
 		},
 		{
 			"name": "Test All",
-			"program": "${workspaceFolder}/testoutput.js",
+			"program": "${workspaceFolder}/testoutput.mjs",
 			"request": "launch",
 			"skipFiles": [
 				"<node_internals>/**"

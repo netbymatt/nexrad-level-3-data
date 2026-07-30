@@ -1,5 +1,6 @@
 // parse data in the graphic area as packet 22 and related packets
-const { parser } = require('../packets');
+
+import parser from '../packets/index.mjs';
 
 const parse22 = (raf) => {
 	let result = {
@@ -17,7 +18,7 @@ const parse22 = (raf) => {
 		// multiple packet 21 (cell data) are returned, add to existing cells
 		if (!data.volumeTimes) result.cells = { ...result.cells, ...data };
 		// test for end of file
-		if (raf.getPos() < raf.getLength())	divider = raf.readShort();
+		if (raf.getPos() < raf.getLength()) divider = raf.readShort();
 	}
 
 	// skip back final time if there's more data
@@ -25,4 +26,4 @@ const parse22 = (raf) => {
 	return result;
 };
 
-module.exports = parse22;
+export default parse22;

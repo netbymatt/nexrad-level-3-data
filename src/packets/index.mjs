@@ -2,9 +2,14 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 // load all packets in folder automatically
-const files = (await fs.readdir(__dirname)).filter((file) => !fs.lstatSync(path.join(__dirname, file)).isDirectory() && file !== 'index.js');
-// eslint-disable-next-line import/no-dynamic-require
-const packetsRaw = files.map((file) => require(path.join(__dirname, file)));
+
+const filesRaw = await fs.readdir(import.meta.dirname);
+const filesChecked = await Promise.all(filesRaw.map(async (file) => !(await fs.lstat(path.join(import.meta.dirname, file))).isDirectory() && file !== 'index.mjs'));
+const files = filesRaw.filter((_, i) => filesChecked[i]);
+
+const packetsRaw = await Promise.all(
+	files.map((file) => import(path.join(import.meta.dirname, file))),
+);
 
 // make up a list of packets by integer type
 const packets = {};

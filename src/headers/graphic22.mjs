@@ -1,8 +1,8 @@
 // parse data in the graphic area as packet 22 and related packets
 
-import parser from '../packets/index.mjs';
+import { parser } from '../packets/index.mjs';
 
-const parse22 = (raf) => {
+const graphic22 = (raf) => {
 	let result = {
 		cells: {},
 	};
@@ -26,4 +26,4 @@ const parse22 = (raf) => {
 	return result;
 };
 
-export default parse22;
+export default graphic22;

@@ -1,7 +1,7 @@
 import { parser } from '../packets/index.mjs';
 import graphic22 from './graphic22.mjs';
 
-const parse = (raf) => {
+const graphicHeader = (raf) => {
 	const blockDivider = raf.readShort();
 	// for product 62 the block divider is not present and is a packet code 22
 	if (blockDivider === 22) {
@@ -48,4 +48,4 @@ const parse = (raf) => {
 
 //
 
-export default parse;
+export default graphicHeader;

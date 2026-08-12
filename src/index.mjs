@@ -1,13 +1,13 @@
 import bzip from 'seek-bzip';
 import { RandomAccessFile } from './randomaccessfile/index.mjs';
-import textHeader from './headers/text.js';
-import messageHeader from './headers/message.js';
-import { parse as productDescription } from './headers/productdescription.js';
-import symbologyHeader from './headers/symbology.js';
-import tabularHeader from './headers/tabular.js';
+import textHeader from './headers/text.mjs';
+import parseMessageHeader from './headers/message.mjs';
+import parseProductDescription from './headers/productdescription.mjs';
+import symbologyHeader from './headers/symbology.mjs';
+import tabularHeader from './headers/tabular.mjs';
 import graphicHeader from './headers/graphic.mjs';
-import radialPackets from './headers/radialpackets.js';
-import { products, productAbbreviations } from './products/index.js';
+import radialPackets from './headers/radialpackets.mjs';
+import { products, productAbbreviations } from './products/index.mjs';
 
 const nullLogger = {
 	log: () => { },
@@ -45,7 +45,7 @@ const nexradLevel3Data = (file, _options) => {
 	if (!productAbbreviations.includes(result.textHeader.type)) throw new Error(`Unsupported product type: ${result.textHeader.type}`);
 
 	// message header
-	result.messageHeader = messageHeader(raf);
+	result.messageHeader = parseMessageHeader(raf);
 	// get the product
 	const product = products[result.messageHeader.code.toString()];
 
@@ -53,7 +53,7 @@ const nexradLevel3Data = (file, _options) => {
 	if (!product) throw new Error(`Unsupported product code: ${result.messageHeader.code}`);
 
 	// product description
-	result.productDescription = productDescription(raf, product);
+	result.productDescription = parseProductDescription(raf, product);
 
 	// test for compressed file and decompress
 	let decompressed;

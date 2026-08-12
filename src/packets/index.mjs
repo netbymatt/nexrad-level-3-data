@@ -33,7 +33,7 @@ const parser = (raf, productDescription) => {
 	const packet = packets[packetCode];
 	// first layer always results in an error
 	if (!packet) throw new Error(`Unsupported packet code 0x${packetCodeHex}`);
-	return packet.parser(raf, productDescription);
+	return packet.parser(raf, productDescription, parser);
 };
 
 export {

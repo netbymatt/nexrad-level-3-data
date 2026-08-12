@@ -1,11 +1,7 @@
 const code = 23;
 const description = 'Special Graphic Symbol Packet';
 
-const parser = (raf) => {
-	throw new Error('can\'t parse packet 0x17 right now');
-	// must require dynamically to avoid circular dependency when not yet fully executed
-
-	const { parser: packetParser } = import('./index.mjs');
+const parser = (raf, productDescription, packetParser) => {
 	// packet header
 	const packetCode = raf.readUShort();
 	const lengthOfBlock = raf.readShort();

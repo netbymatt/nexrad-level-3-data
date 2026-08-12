@@ -12,6 +12,30 @@
 // forecast: [{deg, nm},...] forecasted position of storm in degrees and nm from radar site at [15,30,45,60] minutes
 // }
 
+// parse no data, new and positional info
+// kts returns {deg,kts} instead of the default {deg,nm}
+const parseStringPosition = (position, kts = false) => {
+	// fixed strings
+	if (position === 'NO DATA') return null;
+	if (position === '  NEW  ') return 'new';
+
+	// extract the two numbers
+	const values = position.match(/([ 0-9]{3})\/([ 0-9]{3})/);
+	// couldn't find two numbers
+	if (!values) return undefined;
+	// return the formatted numbers
+	if (kts) {
+		return {
+			deg: +values[1],
+			kts: +values[2],
+		};
+	}
+	return {
+		deg: +values[1],
+		nm: +values[2],
+	};
+};
+
 const formatter = (data) => {
 	// extract relevant data
 	const pages = data?.tabular?.pages;
@@ -45,30 +69,6 @@ const formatter = (data) => {
 
 	return {
 		storms: result,
-	};
-};
-
-// parse no data, new and positional info
-// kts returns {deg,kts} instead of the default {deg,nm}
-const parseStringPosition = (position, kts = false) => {
-	// fixed strings
-	if (position === 'NO DATA') return null;
-	if (position === '  NEW  ') return 'new';
-
-	// extract the two numbers
-	const values = position.match(/([ 0-9]{3})\/([ 0-9]{3})/);
-	// couldn't find two numbers
-	if (!values) return undefined;
-	// return the formatted numbers
-	if (kts) {
-		return {
-			deg: +values[1],
-			kts: +values[2],
-		};
-	}
-	return {
-		deg: +values[1],
-		nm: +values[2],
 	};
 };
 

@@ -4,8 +4,6 @@ import { RandomAccessFile } from '../../randomaccessfile/index.mjs';
 // uses the same data coding as 165
 import { supplemental } from '../165/index.mjs';
 
-const { key } = supplemental;
-
 const code = 177;
 const abbreviation = 'HHC';
 const description = 'Hybrid Hydrometeor Classification';

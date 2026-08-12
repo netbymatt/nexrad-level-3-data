@@ -1,7 +1,7 @@
 import parseMessageHeader from './message.mjs';
 import parseProductDescription from './productdescription.mjs';
 
-const parse = (raf, product) => {
+const tabularHeader = (raf, product) => {
 	const blockDivider = raf.readShort();
 	const blockId = raf.readShort();
 	const blockLength = raf.readInt();
@@ -64,4 +64,4 @@ const parse = (raf, product) => {
 
 //
 
-export default parse;
+export default tabularHeader;

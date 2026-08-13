@@ -2,7 +2,7 @@
 	"name": "nexrad-level-3-data",
 	"version": "1.0.0",
 	"description": "Parsing of NEXRAD level 3 data files",
-	"main": "src/index.js",
+	"main": "src/index.mjs",
 	"type": "module",
 	"scripts": {
 		"test": "node testoutput.js",

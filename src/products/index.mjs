@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 // load all products in folder automatically
 
@@ -8,7 +9,7 @@ const foldersChecked = await Promise.all(foldersRaw.map(async (folder) => (await
 const folders = foldersRaw.filter((_, i) => foldersChecked[i]);
 
 const productsRaw = await Promise.all(
-	folders.map((folder) => import(path.join(import.meta.dirname, folder, 'index.mjs'))),
+	folders.map((folder) => import(pathToFileURL(path.join(import.meta.dirname, folder, 'index.mjs')))),
 );
 
 // make up a list of products by integer type

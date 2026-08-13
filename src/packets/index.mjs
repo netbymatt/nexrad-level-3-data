@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 
 // load all packets in folder automatically
 
@@ -8,7 +9,7 @@ const filesChecked = await Promise.all(filesRaw.map(async (file) => !(await fs.l
 const files = filesRaw.filter((_, i) => filesChecked[i]);
 
 const packetsRaw = await Promise.all(
-	files.map((file) => import(path.join(import.meta.dirname, file))),
+	files.map((file) => import(pathToFileURL(path.join(import.meta.dirname, file)))),
 );
 
 // make up a list of packets by integer type

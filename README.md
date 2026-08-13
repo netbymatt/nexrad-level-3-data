@@ -27,11 +27,11 @@ $ npm install nexrad-level-3-data
 ## Usage
 Usage is straight forward, provide a string or buffer containing any of the [available products](#available-products).
 ``` javascript
-const fs = require('fs');
-const parser = require('nexrad-level-3-data');
+import { readFile } from 'node:fs/promises';
+import nexradLevel3Data from './src/index.mjs';
 
-const file = fs.readFileSync('./data/LOT_N0H_2021_01_31_11_06_30');
-const level3Data = parser(file);
+const file = await readFile('./data/LOT_N0H_2021_01_31_11_06_30');
+const level3Data = nexradLevel3Data(file);
 
 console.log(level3Data);
 ```
@@ -61,7 +61,7 @@ The parser makes some rudimentary checks to confirm data is valid. These checks 
 The parser will also return rich error where possible indicating that a specific product or packet type is not supported.
 
 ```javascript
-parser(file, {
+nexradLevel3Data(file, {
 	// options shown as defaults
 	logger: console,
 })
@@ -155,4 +155,4 @@ It has been observed many times that the source data is occasionally incomplete.
 The code for this project is based upon:
 - [Unidata](https://github.com/Unidata/thredds/blob/master/cdm/src/main/java/ucar/nc2/iosp/nexrad2/)
 - [nexrad-radar-data](https://github.com/bartholomew91/nexrad-radar-data)
-- And my own fork of the above [netbymatt/nexrad-radar-data](https://github.com/netbymatt/nexrad-radar-data)
+- And my own fork of the above [netbymatt/nexrad-level-2-data](https://github.com/netbymatt/nexrad-level-2-data)
